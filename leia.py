@@ -44,7 +44,7 @@ def sortSynsets():
 
 print """MENU:
 1. Single Word Analysis
-2. Document Analysis
+2. Text Analysis
 3. Display Database
 4. Quit\n"""
 answer = raw_input("Please choose an option: ") 
@@ -64,7 +64,7 @@ if answer == "1":
 		print "Arousal(sd): ", find[5]
 
 elif answer == "2":
-	text = (raw_input("Enter passage: ")).lower()#input text
+	text = (raw_input("Enter passage: ")).lower() #input text. do/write txt/csv?
 	words = text.split()
 	print words
 	for s in words:

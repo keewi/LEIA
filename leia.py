@@ -28,6 +28,7 @@ def searchWord(target):
 	for x in data:
 		if x[0] == target:
 			# addToPile(target)
+			print x 
 			return x
 	return None
 
@@ -63,6 +64,12 @@ if answer == "1":
 		print "Arousal(sd): ", find[5]
 
 elif answer == "2":
-	pass
+	text = (raw_input("Enter passage: ")).lower()#input text
+	words = text.split()
+	print words
+	for s in words:
+		searchWord(s)
 elif answer == "3":
 	displayDB()
+
+# input("Press Enter when done...")#Enable when directly running

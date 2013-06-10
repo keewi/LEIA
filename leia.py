@@ -1,34 +1,39 @@
 import csv
 from operator import itemgetter
-import msvcrt
 
-cr = csv.reader(open("testdoc.csv", "r"))
-data = [(row[0], row[1], int(row[2]), int(row[3]), int(row[4]), int(row[5])) for row in cr]
+cr = csv.reader(open("db.csv", "r"))
+data = [(row[0], row[1], float(row[2]), float(row[3]), float(row[4]), float(row[5])) for row in cr]
 data.sort(key = itemgetter(0))
 #Data is sorted list
 
-allWords = [] #Full list of Synsets and found words (Synset, [words])
-val = []
-vadsd = []
-ar = []
-arsd = []
-
+keys = []
+pile = {}
 
 def displayDB():
 #Display Words and Information
 	for x in data:
 		print x[0],':',x[1:]
 
-def addToPile(target):
+def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records
-	pass
+	if synset in keys:
+		(pile[synset][0]).append(val)
+		(pile[synset][1]).append(ar)
+		if word not in pile[synset][2]:
+			(pile[synset][2]).append(word)
+		# print pile[synset]
+		# print "New word added!"
+	else:
+		keys.append(synset)
+		pile[synset] = ([val], [ar], [word])
+		# print "New synset added!"
 
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise
 	for x in data:
 		if x[0] == target:
-			# addToPile(target)
-			print x 
+			addToPile(x)
+			# print x
 			return x
 	return None
 
@@ -66,9 +71,11 @@ if answer == "1":
 elif answer == "2":
 	text = (raw_input("Enter passage: ")).lower() #input text. do/write txt/csv?
 	words = text.split()
-	print words
+	# print words
 	for s in words:
 		searchWord(s)
+	print pile
+
 elif answer == "3":
 	displayDB()
 

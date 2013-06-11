@@ -29,12 +29,9 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		if word not in pile[synset][2]:
 			(pile[synset][2]).append(word)
 		(pile[synset][3]) += 1
-		# print "New word added!"
 	else:
 		keys.append(synset)
 		pile[synset] = [[val], [ar], [word], 1]
-		# print pile[synset]
-		# print "New synset added!"
 
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise

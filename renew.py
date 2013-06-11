@@ -7,7 +7,7 @@ data_sr = [(row[0], float(row[2]), float(row[3]), float(row[4]), float(row[5])) 
 d = open("db.csv","r")
 dr = csv.reader(d)
 data_dr = [(row[0],row[1]) for row in dr]
-d = open("newdb.csv","w")
+d = open("db.csv","w")#call it newdb.csv to make a new one if revising code
 dw = csv.writer(d, lineterminator = '\n')
 
 def searchWord(target):

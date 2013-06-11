@@ -9,7 +9,7 @@ data.sort(key = itemgetter(0))
 
 keys = []
 pile = {} #{Synset : [[Vals], [Ars], [Words], freq]}
-aP = {} #{Synset : [Val, ]}
+aP = {} #{Synset : [Val, Ar, [Words], freq]}
 
 def reset():
 	del keys[0:len(keys)]
@@ -33,9 +33,21 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		keys.append(synset)
 		pile[synset] = [[val], [ar], [word], 1]
 
+def unpunctuate(word):
+#recurse to find and keep characters, recycle rest (out of ascii range)
+	if len(word) > 0:
+		c = word[0]
+		ascii = ord(c)
+		if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
+			return c + unpunctuate(word[1:])
+		return unpunctuate(word[1:])
+	#should some punctuation be defined as modifiers? (ex. ! vs .)
+	return ""
+
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise
-	for x in data:
+	target = unpunctuate(target)
+	for x in data:	
 		if x[0] == target:
 			addToPile(x)
 			return x
@@ -55,6 +67,27 @@ def displayAnalyzed():
 	for s in keys: #need to do: make this a nicer-looking table
 		print s, "\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
 
+def dataAnalysis():
+	doc = raw_input("Document name (must be .csv): ")
+	try:
+		with open(doc, 'r') as f:
+			reader = csv.reader(f)
+			d = open("results.csv","w")
+			dw = csv.writer(d, lineterminator = '\n')
+
+			for row in reader:
+				for x in row:
+					reset()
+					text = x.lower()
+					words = text.split()
+					for s in words:
+						searchWord(s)
+					analyzePile()
+					dw.writerow([x, aP])
+	
+	except IOError:
+		print "Could not read file: ", doc
+	print "\nDone. Results have been saved as results.csv"
 
 print """MENU:
 1. Single Word Analysis
@@ -90,26 +123,7 @@ elif answer == "2":
 
 elif answer == "3":
 #Searches for words in passages in a csv file
-	doc = raw_input("Document name (must be .csv): ")
-	try:
-		with open(doc, 'r') as f:
-			reader = csv.reader(f)
-			d = open("results.csv","w")
-			dw = csv.writer(d, lineterminator = '\n')
-
-			for row in reader:
-				for x in row:
-					reset()
-					print "Reset!"
-					text = x.lower()
-					words = text.split()
-					for s in words:
-						searchWord(s)
-					analyzePile()
-					dw.writerow([x, aP])
-	
-	except IOError:
-		print "Could not read file: ", doc
+	dataAnalysis()
 
 elif answer == "4":
 	displayDB()

@@ -5,7 +5,7 @@ import math
 cr = csv.reader(open("db.csv", "r"))
 data = [(row[0], row[1], float(row[2]), float(row[3]), float(row[4]), float(row[5])) for row in cr]
 data.sort(key = itemgetter(0))
-#Data is sorted list
+#Data is sorted list of database
 
 keys = []
 pile = {} #{Synset : [[Vals], [Ars], [Words], freq]}
@@ -29,11 +29,8 @@ def totalVA():
 	for k in keys:
 		for num in pile[k][0]: 
 			t0.append(num)
-			# print "Number added!"
 		for num in pile[k][1]: 
 			t1.append(num)
-	print t0
-	print t1
 	total.append(avg(t0))
 	total.append(avg(t1))
 
@@ -70,8 +67,6 @@ def searchWord(target):
 	return None
 
 def avg(list):
-	# print "this is the list: ", list
-	# print aP
 	if len(list)>0:
 		avg = (sum(list)/len(list))
 		return math.ceil(avg*100)/100
@@ -95,7 +90,7 @@ def dataAnalysis():
 			reader = csv.reader(f)
 			d = open("results.csv","w")
 			dw = csv.writer(d, lineterminator = '\n')
-
+			dw.writerow(['Input', 'Analysis', 'Overall Valence', 'Overall Arousal'])
 			for row in reader:
 				for x in row:
 					reset()
@@ -106,7 +101,7 @@ def dataAnalysis():
 					analyzePile()
 					totalVA()
 					dw.writerow([x, aP, total[0], total[1]])
-			print "\nDone. Results have been saved as results.csv"
+			print "\nDone! Results have been saved as results.csv"
 	
 	except IOError:
 		print "Could not read file: ", doc
@@ -137,8 +132,7 @@ if answer == "1":
 
 elif answer == "2":
 #Searches for words in text input
-	text = (raw_input("Enter passage: ")).lower() #input text. do/write txt/csv?
-	words = text.split()
+	text = (raw_input("Enter passage: ")).lower()
 	for s in words:
 		searchWord(s)
 	analyzePile()

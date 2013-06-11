@@ -6,7 +6,7 @@ sr = csv.reader(open("anew.csv", "r"))
 data_sr = [(row[0], float(row[2]), float(row[3]), float(row[4]), float(row[5])) for row in sr]
 d = open("db.csv","r")
 dr = csv.reader(d)
-data_dr = [(row[0],row[1]) for row in dr]
+data_dr = [(row[0],row[1],row[2],row[3],row[4],row[5]) for row in dr]
 d = open("db.csv","w")#call it newdb.csv to make a new one if revising code
 dw = csv.writer(d, lineterminator = '\n')
 
@@ -24,6 +24,6 @@ for word in data_dr:
 		dw.writerow(a)
 	else:
 		a = list(word)
-		dw.writerow(a)
+		dw.writerow(word)
 
-print "Done"
+print "Done!"

@@ -10,16 +10,32 @@ data.sort(key = itemgetter(0))
 keys = []
 pile = {} #{Synset : [[Vals], [Ars], [Words], freq]}
 aP = {} #{Synset : [Val, Ar, [Words], freq]}
+total = []
 
 def reset():
 	del keys[0:len(keys)]
 	pile.clear()
 	aP.clear()
+	del total[0:len(total)]
 
 def displayDB():
 #Display Words and Information
 	for x in data:
 		print x[0],':',x[1:]
+
+def totalVA():
+	t0 = []
+	t1 = []
+	for k in keys:
+		for num in pile[k][0]: 
+			t0.append(num)
+			# print "Number added!"
+		for num in pile[k][1]: 
+			t1.append(num)
+	print t0
+	print t1
+	total.append(avg(t0))
+	total.append(avg(t1))
 
 def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
@@ -53,11 +69,16 @@ def searchWord(target):
 			return x
 	return None
 
-def analyzePile():
-#Analyzes pile, saves as aP
-	def avg(list):
+def avg(list):
+	# print "this is the list: ", list
+	# print aP
+	if len(list)>0:
 		avg = (sum(list)/len(list))
 		return math.ceil(avg*100)/100
+	return 0
+
+def analyzePile():
+#Analyzes pile, saves as aP
 	for synset in keys:
 		aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
 
@@ -83,11 +104,13 @@ def dataAnalysis():
 					for s in words:
 						searchWord(s)
 					analyzePile()
-					dw.writerow([x, aP])
+					totalVA()
+					dw.writerow([x, aP, total[0], total[1]])
+			print "\nDone. Results have been saved as results.csv"
 	
 	except IOError:
 		print "Could not read file: ", doc
-	print "\nDone. Results have been saved as results.csv"
+
 
 print """MENU:
 1. Single Word Analysis

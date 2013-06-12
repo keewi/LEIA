@@ -90,7 +90,9 @@ def dataAnalysis():
 			reader = csv.reader(f)
 			d = open("results.csv","w")
 			dw = csv.writer(d, lineterminator = '\n')
+			# nw = csv.writer(open("newWordsFound.csv","w"), lineterminator = '\n')
 			dw.writerow(['Input', 'Analysis', 'Overall Valence', 'Overall Arousal'])
+			
 			for row in reader:
 				for x in row:
 					reset()
@@ -101,6 +103,13 @@ def dataAnalysis():
 					analyzePile()
 					totalVA()
 					dw.writerow([x, aP, total[0], total[1]])
+					#THIS IS FOR ADDING NEW WORDS!!(below) - also, the nw line above
+					# if len(keys) == 0:
+					# 	print x
+					# 	newWords = ((raw_input("\nInput new emotion words: ")).lower()).split()
+					# 	for w in newWords:
+					# 		nw.writerow([w])
+
 			print "\nDone! Results have been saved as results.csv"
 	
 	except IOError:

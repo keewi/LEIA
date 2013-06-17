@@ -11,12 +11,14 @@ keys = []
 pile = {} #{Synset : [[Vals], [Ars], [Words], freq]}
 aP = {} #{Synset : [Val, Ar, [Words], freq]}
 total = []
+neg = False
 
 def reset():
 	del keys[0:len(keys)]
 	pile.clear()
 	aP.clear()
 	del total[0:len(total)]
+	neg = False
 
 def displayDB():
 #Display Words and Information
@@ -36,6 +38,12 @@ def totalVA():
 
 def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
+	if neg:
+		global neg
+		neg = False
+		val = 10-val #SUPER IMPORTANT!! How big is the scale? (Here, it is assumed that it is 1-10)
+		ar = 10-ar
+		word = "not "+word
 	if synset in keys:
 		(pile[synset][0]).append(val)
 		(pile[synset][1]).append(ar)
@@ -57,16 +65,26 @@ def unpunctuate(word):
 	#should some punctuation be defined as modifiers? (ex. ! vs .)
 	return ""
 
+def negFound(word):
+#Stores negation found!
+	if word == "not":
+		global neg 
+		neg = True
+
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise
 	target = unpunctuate(target)
+	negFound(target)
+	print neg
 	for x in data:	
 		if x[0] == target:
+			print neg, " ", target
 			addToPile(x)
 			return x
 	return None
 
 def avg(list):
+#Returns average of a list of numbers
 	if len(list)>0:
 		avg = (sum(list)/len(list))
 		return math.ceil(avg*100)/100
@@ -78,6 +96,7 @@ def analyzePile():
 		aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
 
 def displayAnalyzed():
+#Prints results
 	print "\nRESULTS: "
 	print "Synset\tFreq.\tAvg.Valence\tAvg.Arousal\tWords"
 	for s in keys: #need to do: make this a nicer-looking table

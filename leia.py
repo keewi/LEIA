@@ -150,8 +150,7 @@ print """MENU:
 3. Data Analysis
 4. Display Database
 5. Quit\n"""
-answer = raw_input("Please choose an option: ") 
-#Set as an option if you are only using one
+answer = raw_input("Please choose an option: ")
 
 if answer == "1":
 #Searches one word
@@ -170,6 +169,7 @@ if answer == "1":
 elif answer == "2":
 #Searches for words in text input
 	text = (raw_input("Enter passage: ")).lower()
+	words = text.split()
 	for s in words:
 		searchWord(s)
 	analyzePile()

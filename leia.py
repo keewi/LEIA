@@ -13,13 +13,15 @@ aP = {} #{Synset : [Val, Ar, [Words], freq]}
 total = []
 neg = False
 punc = ["?",".", ",",":",";"]
+p = False
 
 def reset():
 	del keys[0:len(keys)]
 	pile.clear()
 	aP.clear()
 	del total[0:len(total)]
-	global neg
+	global neg, p
+	p = False
 	neg = False
 
 def displayDB():
@@ -65,14 +67,15 @@ def unpunctuate(word):
 		if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
 			return c + unpunctuate(word[1:])
 		if (c in punc) and neg:
-			neg = False #Removes overflow for negations into following sentences
+			global p
+			p = True #Removes overflow for negations into following sentences
 		return unpunctuate(word[1:])
 	#should some punctuation be defined as modifiers? (ex. ! vs .)
 	return ""
 
 def negFound(word):
 #Stores negation found!
-	if (word == "not") or (word[-2:] == "nt"): #Ref: 51, 285
+	if (word == "not") or (word[-3:] == "dnt" or word[-3:] == "snt"): #Ref: 51, 285
 		global neg 
 		neg = True
 
@@ -84,6 +87,9 @@ def searchWord(target):
 		if x[0] == target:
 			addToPile(x)
 			return x
+	global neg
+	if p and neg:	
+		neg = False
 	return None
 
 def avg(list):

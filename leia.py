@@ -41,8 +41,8 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 	global neg
 	if neg:
 		neg = False
-		val = 11-val #SUPER IMPORTANT!! Even though the scale is 1-9, the effects of "not" aren't as dramatic as completely flipping val/ar. +2 added for buffer
-		ar = 12-ar
+		val = 9-val
+		ar = 9-ar
 		word = "not "+word
 	if synset in keys:
 		(pile[synset][0]).append(val)

@@ -16,6 +16,7 @@ punc = ["?",".", ",",":",";"]
 p = False
 
 def reset():
+#Resets variables
 	del keys[0:len(keys)]
 	pile.clear()
 	aP.clear()
@@ -26,10 +27,12 @@ def reset():
 
 def displayDB():
 #Display Words and Information
+	print "\nFORMAT: \nword : ('synset', valence, val sd, arousal, ar sd)\n"
 	for x in data:
 		print x[0],':',x[1:]
 
 def totalVA():
+#Analyzes and records total entry valence and arousal
 	t0 = []
 	t1 = []
 	for k in keys:
@@ -58,36 +61,30 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		keys.append(synset)
 		pile[synset] = [[val], [ar], [word], 1]
 
-def unpunctuate(word):
-#recurse to find and keep characters, recycle rest (out of ascii range)
-	global neg
-	if len(word) > 0:
-		c = word[0]
-		ascii = ord(c)
-		if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
-			return c + unpunctuate(word[1:])
-		if (c in punc) and neg:
-			global p
-			p = True #Removes overflow for negations into following sentences
-		return unpunctuate(word[1:])
-	#should some punctuation be defined as modifiers? (ex. ! vs .)
-	return ""
-
-def negFound(word):
-#Stores negation found!
-	if (word == "not") or (word[-3:] == "dnt" or word[-3:] == "snt"): #Ref: 51, 285
-		global neg 
-		neg = True
-
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise
+	global neg
+	def unpunctuate(word):
+	#recurse to find and keep characters, recycle rest (out of ascii range)
+		global neg
+		if len(word) > 0:
+			c = word[0]
+			ascii = ord(c)
+			if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
+				return c + unpunctuate(word[1:])
+			if (c in punc) and neg:
+				global p
+				p = True #Removes overflow for negations into following sentences
+			return unpunctuate(word[1:])
+		#should some punctuation be defined as modifiers? (ex. ! vs .)
+		return ""
 	target = unpunctuate(target)
-	negFound(target)
+	if (target == "not") or (target[-3:] == "dnt" or target[-3:] == "snt"): #Ref: 51, 285
+		neg = True
 	for x in data:	
 		if x[0] == target:
 			addToPile(x)
 			return x
-	global neg
 	if p and neg:	
 		neg = False
 	return None
@@ -107,11 +104,22 @@ def analyzePile():
 def displayAnalyzed():
 #Prints results
 	print "\nRESULTS: "
-	print "Synset\tFreq.\tAvg.Valence\tAvg.Arousal\tWords"
-	for s in keys: #need to do: make this a nicer-looking table
-		print s, "\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
+	print "Synset\t\tFreq.\tAvg.Valence\tAvg.Arousal\tWords"
+	for s in keys: #NEED TO DO: make the spacing work
+		print s, "\t\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
+
+def textAnalysis(text):
+#Analyzes a single passage
+	reset()
+	text = text.lower()
+	words = text.split()
+	for s in words:
+		searchWord(s)
+	analyzePile()
+	totalVA()
 
 def dataAnalysis():
+#Analyzes each and every entry in a document separately
 	doc = raw_input("Document name (must be .csv): ")
 	try:
 		with open(doc, 'r') as f:
@@ -123,13 +131,7 @@ def dataAnalysis():
 			
 			for row in reader:
 				for x in row:
-					reset()
-					text = x.lower()
-					words = text.split()
-					for s in words:
-						searchWord(s)
-					analyzePile()
-					totalVA()
+					textAnalysis(x)
 					dw.writerow([x, aP, total[0], total[1]])
 					#THIS IS FOR ADDING NEW WORDS!!(below) - also, the nw line above
 					# if len(keys) == 0:
@@ -143,43 +145,44 @@ def dataAnalysis():
 	except IOError:
 		print "Could not read file: ", doc
 
-
-print """MENU:
+def menu():
+#Main menu
+	print """MENU:
 1. Single Word Analysis
 2. I/O Text Analysis
 3. Data Analysis
 4. Display Database
 5. Quit\n"""
-answer = raw_input("Please choose an option: ")
+	answer = raw_input("Please choose an option: ")
 
-if answer == "1":
-#Searches one word
-	target = (raw_input("Enter word: ")).lower()
-	find = searchWord(target)
-	if find == None:
-		print "Not found."
-	else:
-		print "\nRESULTS: "
-		print "Synset:      ", find[1]
-		print "Valence:     ", find[2]
-		print "Valence(sd): ", find[3]
-		print "Arousal:     ", find[4]
-		print "Arousal(sd): ", find[5]
+	if answer == "1":
+	#Searches one word
+		target = (raw_input("Enter word: ")).lower()
+		find = searchWord(target)
+		if find == None:
+			print "Not found."
+		else:
+			print "\nRESULTS: "
+			print "Synset:      ", find[1]
+			print "Valence:     ", find[2]
+			print "Valence(sd): ", find[3]
+			print "Arousal:     ", find[4]
+			print "Arousal(sd): ", find[5]
+			print "\n Done."
 
-elif answer == "2":
-#Searches for words in text input
-	text = (raw_input("Enter passage: ")).lower()
-	words = text.split()
-	for s in words:
-		searchWord(s)
-	analyzePile()
-	displayAnalyzed()
+	elif answer == "2":
+	#Searches for words in text input
+		text = raw_input("Enter passage: ")
+		textAnalysis(text)
+		displayAnalyzed()
 
-elif answer == "3":
-#Searches for words in passages in a csv file
-	dataAnalysis()
+	elif answer == "3":
+	#Searches for words in passages in a csv file
+		dataAnalysis()
 
-elif answer == "4":
-	displayDB()
+	elif answer == "4":
+		displayDB()
+
+menu()
 
 # input("Press Enter when done...")#Enable when directly running

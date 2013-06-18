@@ -38,8 +38,8 @@ def totalVA():
 
 def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
+	global neg
 	if neg:
-		global neg
 		neg = False
 		val = 10-val #SUPER IMPORTANT!! How big is the scale? (Here, it is assumed that it is 1-10)
 		ar = 10-ar
@@ -75,10 +75,8 @@ def searchWord(target):
 #Returns tuple with target word and information, None otherwise
 	target = unpunctuate(target)
 	negFound(target)
-	print neg
 	for x in data:	
 		if x[0] == target:
-			print neg, " ", target
 			addToPile(x)
 			return x
 	return None

@@ -1,6 +1,391 @@
 Input,Analysis,Overall Valence,Overall Arousal
+Chris is very disappointed not to have won any money. He saw that his odds were more that 50/50 that he would win $30 or $60. Chris is hopeful that he might win money on the next spin.,"{'inspired': [2.91, 4.22, ['not hopeful'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.65,4.57
+Upset that he didn't win anything.,"{'sad': [2.0, 5.86, ['upset'], 1]}",2.0,5.86
+He is sad he didnt win anything.,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+Very disappointed that he didn't win any money at all. ,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Pretty dang happy!,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+I think David feels pretty good about winning the $30.  There were pretty good odds of him landing on 0.,"{'happy': [7.47, 5.43, ['good'], 2]}",7.47,5.43
+He is some what glad that he won 30 dollars because the chances of him winning were very low\n,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+happy. justifies his outcome by saying he could have easily walked away with nothing,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+James is relieved that he won $30 as opposed to no money; but he still wishes he would have won the greater amount of money.,"{'fortunate': [7.09, 5.16, ['relieved', 'wishes'], 2]}",7.09,5.16
+Uggggggh - he's probably feeling jipped. This was so close!!!,"{'unfortunate': [2.0, 4.0, ['jipped'], 1]}",2.0,4.0
+Content and satisfied that he won money at all; yet somewhat upset he didnt get the highest amount. ,"{'content': [7.5, 4.82, ['content', 'satisfied'], 2], 'sad': [2.0, 5.86, ['upset'], 1]}",5.67,5.17
+James is excited about winning anything at all.  That $0 slot on the wheel is very large and he was very nervous about it prior to spinning the wheel.,"{'nervous': [3.29, 6.59, ['nervous'], 1], 'excited': [7.5, 7.67, ['excited'], 1]}",5.4,7.13
+George is probably upset that he did not win more; but happy that he won money.,"{'happy': [1.79, 3.51, ['not happy'], 1], 'sad': [2.0, 5.86, ['upset'], 1]}",1.9,4.69
+Frank feels very elated! He won the highest amount and has earned some extra cash.,"{'excited': [7.45, 6.21, ['elated'], 1]}",7.45,6.21
+Chris is happy that he won $60; which is the largest amount on the wheel. ,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Jacob must feel incredibly happy about his $60 win. He won the most amount of money and had the smallest probability of winning it. He couldn't have wished for a better outcome.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+The player will be very excited with the result as it is the highest amount on the wheel and it is the grand prize.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+David feels awesome because he not only got the highest amount; but it was also the smallest section which made it unlikely to get.,"{'great': [9.0, 6.0, ['awesome'], 1]}",9.0,6.0
+Glad and lucky for wining the largest amount of money available.,"{'fortunate': [5.54, 5.69, ['not glad', 'lucky'], 2]}",5.54,5.69
+Happy because he won the largest amount of $. Probably lucky too because it was the smallest area and he landed on it.,"{'fortunate': [8.17, 6.53, ['lucky'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",8.2,6.51
+Happy and relieved,"{'fortunate': [7.09, 5.16, ['relieved'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.65,5.83
+I think that is what he expected since the 10 amount is very large,{},0,0
+He probably feel glad that he won something. But at the same time he would be disappointed that he didn't win 75 dollars. ,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'fortunate': [7.09, 5.16, ['glad'], 1]}",4.74,5.04
+He felt disappointed as he got the lowest amount of money.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+He feels content but would've been happier if he won the $35 or $75.,"{'content': [7.06, 4.7, ['content'], 1]}",7.06,4.7
+Predicatable,{},0,0
+Disappointed; but not shocked. His odds were definitely for this result; though he probably would've rather had the $75,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Eric knew he was most likely to win $10 since it was the most likely outcome; so he isn't too surprised. He's slightly disappointed that he also had a $50 chance of winning more than $10.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'surprised': [2.54, 2.54, ['not surprised'], 1]}",2.46,3.73
+He is disappointed he won the least amount.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+George is very happy,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Scott is upset by his winnings; because that is the lowest amount anyone has won today,"{'sad': [2.0, 5.86, ['upset'], 1]}",2.0,5.86
+I think Jake is excited.  He knows that $10 is the reasonable amount to expect.  He would have been happier to get $75; though.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Tom probably feels very good about his earnings. Even though he didn't win $75; he still did very well and is happy.,"{'happy': [7.84, 5.96, ['good', 'happy'], 2]}",7.84,5.96
+He is disappointed he didnt win the largest amount but satisfied for not winning the least.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",5.17,4.93
+he is happy he got the middle amount but sad because the top amount is double what he could have won,"{'sad': [1.61, 4.13, ['sad'], 1], 'happy': [1.79, 3.51, ['not happy'], 1]}",1.7,3.82
+content. he won more than the least possible.,"{'content': [7.06, 4.7, ['content'], 1]}",7.06,4.7
+He probably expected that he would win 10 dollars since it was the most likely. He probably is okay with 35 dollars but would have liked 75 dollars.,"{'content': [6.06, 4.7, ['okay'], 1]}",6.06,4.7
+happy because he won the middle amount,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+I think John feels alright about the $35 prize.  The odds were in favor of landing on the $10 prize.,"{'content': [6.06, 4.7, ['alright'], 1]}",6.06,4.7
+Even though it wasn't the largest amount; he is still glad as there was more then fifty percent chance; he could of gotten lower than that.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+He felt amazing!,"{'great': [9.0, 6.0, ['amazing'], 1]}",9.0,6.0
+Elated!,"{'excited': [7.45, 6.21, ['elated'], 1]}",7.45,6.21
+Tom is probably feeling very good.  He has hit the highest amount with the smallest chance of winning.  You can do a few things with 75 dollars these days.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+he is as happy as you can get by playing this game. max happiness. lowest odds; but highest payoff.,"{'happy': [8.22, 6.49, ['happy', 'happiness'], 2]}",8.22,6.49
+Very lucky that it landed in the smallest section with highest payout.I think he would feel like he beat the odds against him.,"{'fortunate': [8.17, 6.53, ['lucky'], 1]}",8.17,6.53
+Tom is most likely extremely happy with his spin. The chance of winning $10 or $35 was much greater than spinning $75.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Jake is very happy to have won $75; especially since the wheel had almost stopped on $10. He also feels lucky since winning $75 had the smallest probability of the three possibilities. ,"{'fortunate': [8.17, 6.53, ['lucky'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",8.2,6.51
+good going Josh,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+really happy; won the most amount on the smallest part.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
 Not great; there was close to a 50% chance of winning a higher amount; but at least he still won a little.,"{'great': [1.5, 1.5, ['not great'], 1]}",1.5,1.5
 Disappointed that he didn't get $70 or $80.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
 sad because he won the lowest amount.,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
 Kindof disappointed. He won a little bit; which is good; but far less than he could have.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",4.93,5.18
 Disappointed; but not surprised.  He got the lowest prize but that had nearly the same odds as the two higher prizes combined.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'surprised': [2.54, 2.54, ['not surprised'], 1]}",2.46,3.73
+He feels content because he now has $15 but not as happy as he would've if it was the $80.,"{'content': [7.06, 4.7, ['content'], 1], 'happy': [1.79, 3.51, ['not happy'], 1]}",4.43,4.11
+Chris is probably disappointed at only winning $15.  Although it wasn't the best outcome; Chris knew this was the most probable result.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+A little disappointed for not winning a larger amount; yet still glad to have won.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'fortunate': [2.91, 4.84, ['not glad'], 1]}",2.66,4.88
+Josh is probably a little upset that he didn't earn one of the two higher prizes. However; he still made at least a little bit of money and therefore doesn't feel too upset.,"{'sad': [2.0, 5.86, ['upset'], 2]}",2.0,5.86
+He is not very satisfied because he was hopping to win the bigger draw,"{'content': [2.06, 5.06, ['not satisfied'], 1]}",2.06,5.06
+Frank is okay with winning $15.  He knew that it would probably land there anyways (because it's the bigger part of the wheel).  Even though the other two prizes were slightly larger than half; he wasn't expecting to land in that portion.,"{'content': [6.06, 4.7, ['okay'], 1]}",6.06,4.7
+Angry for being right on the line for $70,"{'angry': [2.85, 7.17, ['angry'], 1]}",2.85,7.17
+excellent,"{'great': [9.0, 6.0, ['excellent'], 1]}",9.0,6.0
+He is probably very satisfied with his spin. The chance of winning $70 was much smaller than the chance of him winning $15.,"{'content': [7.94, 4.95, ['satisfied'], 1]}",7.94,4.95
+He is very excited because he won the middle amount and it is very close to the top amount he could win.  There is no disappointment because the middle amount is so much larger than the lowest and it is almost as much as the highest,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Bob is happy that he won. The odds were against him winning that much; but his spin overcame those odds. He would have been happiest with $80; but he is satisfied with $70.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",8.08,5.72
+Frank is very happy with winning $70.  The odds were against him for winning that much; anyways.  I'm sure he would have enjoyed winning $80 instead; but it's not that much more money.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Excited and happy,"{'excited': [2.5, 2.33, ['not excited'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.36,4.41
+Charlie is probably very happy.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Very Excited! He won the highest amount possible.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Chris must feel amazing after his win of $80. It is the smallest section of the wheel and it is worth the most amount of money. He couldn't hope for a better outcome. ,"{'great': [9.0, 6.0, ['amazing'], 1]}",9.0,6.0
+Excited and pumped that he won the highest amount possible. ,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Eric feels very happy because there was a large chance he'd get $15 which is very little but he won 80 instead,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Disappointed,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Jake is disappointed to win the largest amount of money; although he is not very surprised because his chances of winning 70 were slim.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'surprised': [2.54, 2.54, ['not surprised'], 1]}",2.46,3.73
+Not surprising; but maybe disappointing because it's the lowest amount of money. It's not surprising though because that had the highest odds.,"{'disappointed': [2.39, 4.92, ['disappointing'], 1], 'surprised': [2.54, 2.54, ['not surprising'], 2]}",2.49,3.33
+he his happy that he won the middle amount but sad he didn't win the highest,"{'sad': [1.61, 4.13, ['sad'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",4.91,5.31
+happy that he won the second largest amount,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Jake is very content with winning 45 dollars. HE can comfort himself with the fact that he didn't get the least amount of money.  ,"{'content': [7.06, 4.7, ['content'], 1]}",7.06,4.7
+Eric is glad he won more than the most likely outcome; especially since there was a greater chance of winning $20.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+He felt happy because the $45 is a good amount and he didn't see any chance of getting 70,"{'happy': [7.84, 5.96, ['happy', 'good'], 2]}",7.84,5.96
+Charlie should feel good about earning $45. Although $70 would have been better; $45 is still better than $20 and therefore is a good thing to leave with.,"{'happy': [7.47, 5.43, ['good'], 2]}",7.47,5.43
+John felt okay about winning $45 dollars.  It was the middle prize and still a respectable amount of money.,"{'content': [6.06, 4.7, ['okay'], 1]}",6.06,4.7
+Very good,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+He feels excited and happy because he won the largest amount available on the wheel.,"{'excited': [7.5, 7.67, ['excited'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.86,7.08
+Scott is ecstatic about winning $70.  It appears to be the smallest part of the wheel and he got lucky enough that the pointer landed on it. ,"{'excited': [8.66, 6.92, ['ecstatic'], 1], 'fortunate': [8.17, 6.53, ['lucky'], 1]}",8.42,6.73
+Chris is excited he bet the odds and won the $70 amount.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Very pleased. His win is significantly more than the minimum win would have been.,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+Eric is most likely very satisfied with his spin because the chance of spinning $70 was a little lower than spinning $45 and much lower than spinning $20.,"{'content': [7.94, 4.95, ['satisfied'], 1]}",7.94,4.95
+Josh feels very good for getting the largest amount on the smallest section.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Frank should be very happy.  He obviously won the game.  70 is respectable.  Again; we should all be happy to win something.  He obviously did very well.,"{'happy': [8.22, 6.49, ['happy'], 2]}",8.22,6.49
+happy. won most money possible. ,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+John is very pleased with his spin. Today he's taking home 70$ which is the largest amount on the board.,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+he probably wishes he won the $95; but is happy that he won something,"{'happy': [8.22, 6.49, ['happy'], 1], 'fortunate': [7.09, 5.16, ['wishes'], 1]}",7.65,5.83
+Alex is probably disappointed that he only won $30; since the odds where in his favor to win $95.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Seeing as he ended up so close to 50 as well; he probably is bummed out that it didn't end up at the 50. And he probably is sad that he didn't get to be in the 95 section. ,"{'sad': [2.0, 4.46, ['bummed', 'sad'], 2]}",2.0,4.46
+George would probably be somewhat sad that he didn't win $50 or $95; but at least he gets to walk away with something. I imagine he's happy for that.,"{'happy': [8.22, 6.49, ['happy'], 1], 'sad': [1.61, 4.13, ['sad'], 1]}",4.91,5.31
+David is displeased. He had a higher chance of landing on the $95; but he instead landed on the second largest piece; equaling $30.,"{'unhappy': [2.79, 5.64, ['displeased'], 1]}",2.79,5.64
+Charlie is annoyed that he had a much greater chance of winning either $50 or $95. ,"{'annoying': [3.5, 4.74, ['annoyed'], 1]}",3.5,4.74
+Jacob just feels decent. Not only because he is a poor sport; but because the largest amount and second largest make up the majority of the wheel.,"{'content': [6.06, 4.7, ['decent'], 1]}",6.06,4.7
+James is not thrilled with the outcome. He really wanted it to come out differently.,"{'happy': [1.41, 2.78, ['not thrilled'], 1]}",1.41,2.78
+He is glad about his winnings which is the middle amount but disappointed he did not win the higher amount of $95.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'fortunate': [7.09, 5.16, ['glad'], 1]}",4.74,5.04
+The middle amount; which is good. This was interesting because it has a pretty even odds.,"{'happy': [2.54, 4.57, ['not good'], 1]}",2.54,4.57
+Happy! It's $50 more than he had before.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Still excited but somewhat down that he didn't win the highest; but he still won higher than the lowest. ,"{'excited': [7.5, 7.67, ['excited'], 1], 'sad': [2.13, 5.07, ['down'], 1]}",4.82,6.37
+Bob probably feels pretty good about his win. He won the middle amount of money but may feel a little let down that he didn't win the full $95 considering his chances were the highest there. ,"{'sad': [2.13, 5.07, ['down'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",4.8,5.25
+Satisfied but somewhat disappointed;  Won the middle prize but highest prize had best odds of winning.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",5.17,4.93
+He feels good but lightly disappointed but mostly good.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [7.47, 5.43, ['good'], 2]}",5.78,5.26
+George is probably neutral about the outcome here. He had a somewhat even chance of winning anything; and he got the middle result. I wouldn't be sad about it; I would probably be happy if it happened to me. I'm sure George feels the same way.,"{'content': [5.0, 4.7, ['neutral'], 1], 'happy': [8.22, 6.49, ['happy'], 1], 'sad': [1.61, 4.13, ['sad'], 1]}",4.95,5.11
+He would feel great he got the largest section with the highest payout.,"{'great': [8.5, 8.5, ['great'], 1]}",8.5,8.5
+Charlie probably feels great because he won the most amount of money available. He had a really good chance of getting this amount but just the fact that he won the most would lead to positive responses. ,"{'great': [8.5, 8.5, ['great'], 1], 'happy': [7.74, 5.7, ['good', 'positive'], 2]}",7.99,6.64
+George is very excited to win the largest amount of money; but again; he would have been extremely disappointed to get anything less since that was the largest section of the wheel.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'excited': [7.5, 7.67, ['excited'], 1]}",4.95,6.3
+Very good.  He won the highest prize which was significantly higher value than the other two prizes.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Ecstatic and lucky. ,"{'excited': [8.66, 6.92, ['ecstatic'], 1], 'fortunate': [8.17, 6.53, ['lucky'], 1]}",8.42,6.73
+happy. won the most money possible. doesnt matter that this was the most probable outcome.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Mike is happy about winning $95.  It's the most amount of money on the wheel and also the largest section; so he must have known winning that much was the most probably result.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Happy!,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Bob is ecstatic that he won the maximum amount of money from this wheel. He had a greater than 50/50 chance of winning less money; so he's pretty cool with the outcome.,"{'excited': [8.66, 6.92, ['ecstatic'], 1]}",8.66,6.92
+Disappointed that he didn't win $100; but happy that he at least won some money.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.31,5.71
+Disappointed since he won the lowest amount that you are able to win with a spin. ,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+George is okay with winning $25; but the $60 would have been better as he had about equal odds of winning $60.  He's fine with not winning $100; though.,"{'content': [6.06, 4.7, ['okay'], 1]}",6.06,4.7
+Eric probably is glad for the $25; but is disappointed in not winning the larger amounts on the wheel; which where better odds.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'fortunate': [2.91, 4.84, ['not glad'], 1]}",2.66,4.88
+Disappointed to be so close to $100,"{'disappointed': [7.61, 5.08, ['not disappointed'], 1]}",7.61,5.08
+Happy,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+He is happy he won money but disappointed that he lost out on the higher deals\n,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.31,5.71
+Happy. He didn't expect a big prize so 25 is fine,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+the odds of winning every time is usually a percentage,{},0,0
+Disappointed.  He won the lowest prize and it was significantly lower than the other prizes.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+I think david felt good about his win; because he won a fair amount.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+The player will feel excited at the result as it is a big amount to win in a gamble like the spin wheel. Of course; He would have would have loved to win the highest prize of $100; but still will be thankful for this amount.,"{'love': [8.64, 6.38, ['loved'], 1], 'excited': [7.5, 7.67, ['excited'], 1], 'happy': [6.89, 4.34, ['thankful'], 1]}",7.68,6.13
+Eric probably feels pretty decent. He won the middle amount of money but may be a little let down that he didn't win the full $100.,"{'content': [6.06, 4.7, ['decent'], 1], 'sad': [2.13, 5.07, ['down'], 1]}",4.1,4.89
+Mike is probably glad he won the $60; but had hoped for the $100; which is a lesser odd of winning.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+Eric should be happy.  Again; not the lowest and not the highest.  He beat the odds of a lower amount.  60 is quite a bit higher than 25.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+James is most likely satisfied with his spin. He was probably expecting to spin $25 since that is a majority of the wheel.,"{'content': [2.06, 5.06, ['not satisfied'], 1]}",2.06,5.06
+He feels good; he is satisfied with his $60; he would have liked more but is not disappointed.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'disappointed': [7.61, 5.08, ['not disappointed'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",7.68,5.15
+Bob feels very happy. He won the highest amount of money with the lowest probability of being landed on.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Tom feels great! Although no matter where he landed he would've earned money; the $100 makes him feel amazing.,"{'great': [8.75, 7.25, ['great', 'amazing'], 2]}",8.75,7.25
+James has to be pleased with his spin.  His spin resulted in the most amount of money possible even though it meant landing on the smallest section of the wheel.,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+Wow! He would feel incredibly lucky!,"{'fortunate': [8.17, 6.53, ['lucky'], 1]}",8.17,6.53
+He's extremely excited and surprised that he won the largest amount on the wheel.,"{'excited': [7.5, 7.67, ['excited'], 1], 'surprised': [7.47, 7.47, ['surprised'], 1]}",7.49,7.57
+He probably felt glad about getting some money; but disappointed that it wasn't at least $45. There was a higher chance of him winning $25; but it was still very possible for him to win $45.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'fortunate': [7.09, 5.16, ['glad'], 1]}",4.74,5.04
+Jacob is happy that he has at least won some money. He is upset that he couldn't win more.,"{'sad': [2.0, 5.86, ['upset'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.11,6.18
+Great but also maybe hoping it was higher,"{'great': [8.5, 8.5, ['great'], 1], 'inspired': [7.1, 5.78, ['hoping'], 1]}",7.8,7.14
+Jake is happy to have won some money. He can't help thinking; though; that he missed out on $80; which he actually had a slightly larger chance of winning. He hopes he wins $80 on his next spin and knows his odds are pretty good.,"{'happy': [7.84, 5.96, ['happy', 'good'], 2]}",7.84,5.96
+Frank is disappointed he didn't win a larger amount since the odds where in favor of a larger winning.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Mike is disappointed.  His spin landed on the smallest section of the wheel; and he was only a few inches from almost doubling his money.  ,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Though it is the least amount the player will be happy to have won this. As 'something' is better than 'nothing'.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Because it stopped so close to 80 he probably bummed out having not won the 80 dollars. He probably also is bummed out not to have more than 25; but probably is glad regardless.,"{'fortunate': [2.91, 4.84, ['not glad'], 1], 'sad': [5.0, 5.0, ['bummed', 'not bummed'], 2]}",4.31,4.95
+Disappointed,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+happy; since he won the middle amount.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+He is probably glad he won the $45 amount but wishes he had won the $80.,"{'fortunate': [7.09, 5.16, ['glad', 'wishes'], 2]}",7.09,5.16
+Bob still feels good because he won the middle amount available.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Frank is disappointed that he didn't win $80 because it takes up the largest percentage of the wheel.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+He is disappointed he didnt win the most but satisfied he didnt win the least.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",5.17,4.93
+He would feel ok with this because it was not the lowest payout and was the second largest section.,"{'content': [6.06, 4.7, ['ok'], 1]}",6.06,4.7
+George is very happy to have won the largest prize.  Although; again; he sort of expected it because the section was bigger.,"{'happy': [1.79, 3.51, ['not happy'], 1]}",1.79,3.51
+Jake is very happy because it is natural to be excited about any amount of money if it is the \top\ amount for the game. No matter the amount.,"{'excited': [7.5, 7.67, ['excited'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.86,7.08
+Tom is very excited that he won the largest amount on the spinning wheel.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Happy,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+David most likely expected to win $80. The chance of spinning it was greater than spinning the other two.,{},0,0
+Ecstatic and ready to get his reward!,"{'excited': [8.66, 6.92, ['ecstatic'], 1]}",8.66,6.92
+He is very glad for having won the largest amount.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+a little sad he didnt win $90 since the size of the $90 section is huge.,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+John probably felt pretty bad actually. He didn't hit the largest part of the pie that had the most amount of money associated with it. ,"{'unfortunate': [2.0, 4.0, ['bad'], 1]}",2.0,4.0
+He probably wishes it landed on 60 or 90 since the overall chance for a big prize was higher he was pretty unlucky.,"{'unfortunate': [2.0, 4.0, ['unlucky'], 1], 'fortunate': [7.09, 5.16, ['wishes'], 1]}",4.55,4.58
+Mike is not pleased. Not only did he win the lowest amount; but he had OVER 50% chance of winning $90 as well.,"{'happy': [2.0, 4.03, ['not pleased'], 1]}",2.0,4.03
+He feels a little disappointed because he won $20 instead of the $90. He had a higher probability to get the $90.,"{'disappointed': [7.61, 5.08, ['not disappointed'], 1]}",7.61,5.08
+Alex has to be a little annoyed with only winning $20.  The largest sum of money comprised over half the wheel; and he still couldn't get there.,"{'annoying': [3.5, 4.74, ['annoyed'], 1]}",3.5,4.74
+Steve is upset! The probability of winning $90 was so high and he landed on the smallest prize.,"{'sad': [2.0, 5.86, ['upset'], 1]}",2.0,5.86
+Steve is probably disappointed in the $20 winning; since the odds where in his favor to win a larger amount.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Frank is not to excited that he only won 20 dollars\n,"{'excited': [2.5, 2.33, ['not excited'], 1]}",2.5,2.33
+I would think he felt good about this spin because it could have landed on the larger section for less.Disappointed that it didn't land in the largest section with highest number.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Tom feels disappointed that he didn't win $90 when that section had outcome had the highest probability of occuring. He is happy that he won $60 instead of $20; however.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.31,5.71
+not to shabby,"{'sad': [7.87, 4.93, ['not shabby'], 1]}",7.87,4.93
+I think he feels good about it.  He won the middle prize which is better than the least prize.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Though it is not the highest amount in the wheel. he will be happy with the result.,"{'happy': [1.79, 3.51, ['not happy'], 1]}",1.79,3.51
+Eric is pretty happy to have won $60. He would have preferred to win $90; but he saw that his odds of winning $60 were actually less than winning $20; so he was happy to have won as much as he did.,"{'happy': [8.22, 6.49, ['happy'], 2]}",8.22,6.49
+He feels annoyed that he didn't get 90; he thought there was no way he could get anything else,"{'annoying': [3.5, 4.74, ['annoyed'], 1]}",3.5,4.74
+good; he won the middle amount,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+James may be a bit surprised.  He had a greater chance at 90 but didn't do too bad.  At least he fell in the middle.  ,"{'unfortunate': [2.0, 4.0, ['bad'], 1], 'surprised': [7.47, 7.47, ['surprised'], 1]}",4.74,5.74
+He is relieved; but not as happy as he would have been if there was less of a chance to win the highest amount.  ,"{'happy': [1.79, 3.51, ['not happy'], 1], 'fortunate': [7.09, 5.16, ['relieved'], 1]}",4.44,4.34
+Excited and pumped that he won the highest amount that you are able to win. ,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Happy because he won the largest amount of $ possible.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+James is pleased; though he wasn't TOO worried about landing on the other ones; as he had a high chance of landing on the one he did.,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+back on track,{},0,0
+Jake is excited he won the $90 and figured he had a good chance of winning the amount since the odds where in his favor.,"{'excited': [7.5, 7.67, ['excited'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",7.49,6.55
+Mike feels really happy and satisfied. ,"{'content': [7.94, 4.95, ['satisfied'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",8.08,5.72
+It is the highest amount on the board. So the player will be very happy.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Very glad; since the chances for the largest amount were on his favor.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+He is disappointed he won the least amount.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Bob is a little happy to have won some money. But; he had a great chance at winning $75 and he didn't get it; so he feels a little disappointed; to. Bob is looking forward to future spins because he sees that he has a very good chance to win $50 or $75 more.,"{'great': [8.5, 8.5, ['great'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [7.84, 5.96, ['happy', 'good'], 2]}",6.65,6.34
+I would be somewhat disappointed; though happy that I still won something. Seeing as he had a chance of winning $75; it stinks to only win $15.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.31,5.71
+He would feel let down that it landed in the smallest section with the least payout.The odds were in his favor before the spin because the two largest sections had higher payout.,"{'sad': [2.13, 5.07, ['down'], 1]}",2.13,5.07
+Eric can't believe he won the least amount because it barely takes up any of the wheel.,{},0,0
+sad; he won the smallest amount on the smallest space,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+Disappointing because that's the lowest amount of money. It also had the lowest odds.,"{'disappointed': [2.39, 4.92, ['disappointing'], 1]}",2.39,4.92
+Alex probably is slightly disappointed because while he still won some money; he was hoping for more and they was a good chance he could have gotten more.,"{'inspired': [7.1, 5.78, ['hoping'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",5.66,5.38
+Odds were against David winning $15; so he is not very happy with the outcome. It could have been a lot more if he would have spun at a different speed.,"{'happy': [1.79, 3.51, ['not happy'], 1]}",1.79,3.51
+Steve is angry. He won the lowest amount of money on the piece with the lowest probability.,"{'angry': [2.85, 7.17, ['angry'], 1]}",2.85,7.17
+He likely expected to win either 50 or 75 given how much of the sections they occupy so he is probably bummed out in general. So he is bummed out to only have the 15; but still glad to have something?,"{'fortunate': [7.09, 5.16, ['glad'], 1], 'sad': [2.39, 4.78, ['bummed'], 2]}",3.96,4.91
+Eric more than likely feels let down. He still won money; but he wont the lowest amount offered. He may also be cursing his luck considering he had the smallest probability of hitting that fraction of the wheel. ,"{'sad': [2.13, 5.07, ['down'], 1]}",2.13,5.07
+Cheated. His odds were far better for bigger winnings.,"{'unfortunate': [2.0, 4.0, ['cheated'], 1]}",2.0,4.0
+Scott is probably really excited about having won that amount of money.  He is excited because he could have won much less.,"{'excited': [7.5, 7.67, ['excited'], 2]}",7.5,7.67
+I think he feels good; he won a good amount.,"{'happy': [7.47, 5.43, ['good'], 2]}",7.47,5.43
+Pretty pleased. His odds were best of winning $50; so he probably isn't too surprised either.,"{'surprised': [7.47, 7.47, ['surprised'], 1], 'happy': [8.01, 5.97, ['pleased'], 1]}",7.74,6.72
+He is disappointed he didnt win the most but satisfied he didnt win the least.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",5.17,4.93
+James is most likely happy. He got the mid-end result; and walks away with a good amount of money. Nothing wrong with that; really.,"{'happy': [7.84, 5.96, ['happy', 'good'], 2]}",7.84,5.96
+He's happy that he won $50; but he would be more happy had he won the $75.,"{'happy': [8.22, 6.49, ['happy'], 2]}",8.22,6.49
+Jake should feel very good. Even though $75 would have been better; $50 is a great amount to earn just by spinning a wheel.,"{'great': [8.5, 8.5, ['great'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",7.99,6.97
+Glad the he won more than $15.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+he is happy he won the middle amount,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Great,"{'great': [8.5, 8.5, ['great'], 1]}",8.5,8.5
+Very happy;  He hit the highest prize possible.  He feels victorious.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+very happy; but not at max happiness. max payout had one of highest probabilities. ,"{'happy': [5.0, 5.0, ['happy', 'not happiness'], 2]}",5.0,5.0
+Scott is very happy to have won the largest amount of money possible on his spin. He is not too surprised that he won; however; because his odds of winning $50 or $75 were greater than getting the smallest amount of $15. He's happy to be playing a game with such good odds and feels confident.,"{'confident': [7.98, 6.22, ['confident'], 1], 'surprised': [2.54, 2.54, ['not surprised'], 1], 'happy': [7.97, 6.14, ['happy', 'good'], 3]}",6.89,5.44
+Excited and enthusiastic that he won the highest amount that you can win on a spin. ,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Mike is happy and excited he won the grand prize of $75; he had a good chance of landing on it.,"{'excited': [7.5, 7.67, ['excited'], 1], 'happy': [7.84, 5.96, ['happy', 'good'], 2]}",7.73,6.53
+Charlie is probably a little disappointed.  I don't know anything about Charlie but I would be happy to have just won anything.  I'm sure he was hoping for 100 or even 65 because they were obviously not the highest possible amount.,"{'inspired': [7.1, 5.78, ['hoping'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.91,5.73
+He is very excited to win free money to add to his account,"{'excited': [2.5, 2.33, ['not excited'], 1]}",2.5,2.33
+Frank is likely upset; as he won the least amount of money possible; but likely doesn't feel any additional negative feelings; as his odds of winning a higher amount were not better.,"{'sad': [2.0, 5.86, ['upset'], 1]}",2.0,5.86
+Alright with what he won; 65 isnt too much more than 40 and the 100 was much smaller,"{'content': [3.95, 5.3, ['not alright'], 1]}",3.95,5.3
+I think Tom feels okay about winning the $40 prize.  It is the least amount but it is still a fair amount of money.,"{'content': [6.06, 4.7, ['okay'], 1]}",6.06,4.7
+He is probably bummed out by not having won 100 dollars because it a lot of money. He is also bummed out because of the fact that he was fairly close to 65 dollars. ,"{'sad': [5.0, 5.0, ['bummed', 'not bummed'], 2]}",5.0,5.0
+Jacob was sad to get the lowest amount of money; especially because he had an equal chance to get 65,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+Good,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+He'd be pretty pleased; because it's more than the minimum win possibility.,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+Bob is probably glad he got $65 since the chance of spinning $40 and $65 was exactly the same.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+Scott is probably satisfied by playing.  Not the highest winnings and not the lowest.  He had an equal opportunity (or at least close) to win just about any of the amounts.,"{'content': [7.94, 4.95, ['satisfied'], 1]}",7.94,4.95
+a little sad since he was close to winning the 100.,"{'sad': [8.39, 5.87, ['not sad'], 1]}",8.39,5.87
+he would feel good about this because it was the second highest payout.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+happy. all the payouts were sufficiently high. ,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Middle amount of money; which is good. The odds are about even; so that might be a disappointment; but it won't be as bad if that had the worst odds and he still got it.,"{'unfortunate': [2.0, 4.0, ['bad'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",4.74,4.72
+Somewhat satisfied.  He wan the middle prize but the highest prize was of significantly more value.,"{'content': [7.94, 4.95, ['satisfied'], 1]}",7.94,4.95
+Charlie is very happy to have won the 65 because its the second highest on wheel.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+I think Tom is super-excited.  He couldn't be more happy.  He had a 1 in 3 chance of landing on $100; so the fact that he landed in the $100 slot is exciting.,"{'excited': [7.5, 7.67, ['exciting'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.86,7.08
+Scott is thrilled that he won $100. His spin couldn't have gone any better.,"{'happy': [8.6, 7.22, ['thrilled'], 1]}",8.6,7.22
+Frank is very happy.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Mike is really happy about winning the $100.  The spin was perfect and couldn't have resulted in a larger sum of money.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+George is very happy to have won $100. He knew that his odds weren't great; but not too small; either. He would have been reasonably happy to have won $65; but he is definitely happy to have gotten the biggest prize. ,"{'great': [8.5, 8.5, ['great'], 1], 'happy': [6.07, 5.5, ['happy', 'not happy'], 3]}",6.68,6.25
+happy. won the most money possible.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Steve feels awesome because he won the largest amount with a 33.33% chance of doing so.,"{'great': [9.0, 6.0, ['awesome'], 1]}",9.0,6.0
+He feels happy that he won money. Tom wishes he would have won more; but he'll take what he can get.,"{'fortunate': [7.09, 5.16, ['wishes'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.65,5.83
+I think he'd be a bit bummed out that he didn't manage to win 90 dollars in the smaller section. And probably a little sad that it stopped so close to 60. He probably thinks he could have won 60.,"{'sad': [2.0, 4.46, ['bummed', 'sad'], 2]}",2.0,4.46
+Though the player will be disappointed that he did not win a higher amount; he will definitely not be fully depressed because he at the least goes with some prize.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'sad': [8.17, 5.28, ['not depressed'], 1]}",5.28,5.1
+sad because he won the lowest amount.,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+James feels good about winning $45. Although $60 or $90 would be better; $45 still isn't too bad so James should feel okay about it.,"{'content': [6.06, 4.7, ['okay'], 1], 'unfortunate': [2.0, 4.0, ['bad'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",5.18,4.71
+He would feel positive.,"{'happy': [8.0, 5.97, ['positive'], 1]}",8.0,5.97
+James is disappointed to win the lowest amount of money; but not taken by surprise.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Scott is glad for the $45; but probably wished he had beaten the odds and won the $90 instead.,"{'fortunate': [2.91, 4.84, ['not glad'], 1]}",2.91,4.84
+a little happy since he won more money than he was likely to win.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Eric should be happy.  He obviously had a very good chance of winning the lowest amount.  60 is respectable winnings.  If he would have spun the darn thing just a little harder.,"{'happy': [7.84, 5.96, ['happy', 'good'], 2]}",7.84,5.96
+Happy. only expected to get 45 but got 60!,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Bob is very happy with $60. He wish he could have won more; but he is satisfied with the outcome of his spin.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'fortunate': [7.09, 5.16, ['wish'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.75,5.53
+He would feel great about this spin because it did not land in the larger section for less payout.,"{'great': [8.5, 8.5, ['great'], 1]}",8.5,8.5
+I think Tom feels great about it.  The wheel very nearly landed on $45 dollars instead of $60.,"{'great': [1.5, 1.5, ['not great'], 1]}",1.5,1.5
+Content with the amount that he won yet disappointed he could have won more,"{'content': [7.06, 4.7, ['content'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",4.73,4.82
+Excited because he won the most amount of $ possible,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+He's extremely happy that he won the largest amount. ,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+He is in a lost for words that he has a free 90 dollars to spend on whatever he likes.,{},0,0
+happy. he won the most money possible when the odds were against him.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+James is thrilled to win the largest amount of money.  It was unexpected; because the probability to land on that section was smaller than the others.,"{'happy': [8.6, 7.22, ['thrilled'], 1]}",8.6,7.22
+very happy!!!!,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Mike must feel amazing considering his win was the highest amount of money; $90; and he had the lowest chance of landing on that fraction of the wheel. He could not have asked for a better outcome. ,"{'great': [9.0, 6.0, ['amazing'], 1]}",9.0,6.0
+Bob felt great about winning the 90 dollar prize.  It is the least likely; and highest value.,"{'great': [1.5, 1.5, ['not great'], 1]}",1.5,1.5
+He feels ecstatic; he was just expecting to get 45$ maybe 60 but ended up with 90,"{'excited': [8.66, 6.92, ['ecstatic'], 1]}",8.66,6.92
+The player will be so ecstatic as it is the highest amount which can possibly be won on this board.,"{'excited': [8.66, 6.92, ['ecstatic'], 1]}",8.66,6.92
+He is happy but a little disappointed that he could not win the 50 or 90.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.31,5.71
+Eric is likely upset; as he won the lowest amount possible; and was very close to winning the highest amount.,"{'sad': [8.0, 4.14, ['not upset'], 1]}",8.0,4.14
+disappointed. won alot of money; but missed out on over 50% chance of making 50 or more,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+He would feel ok about this spin because it landed on the largest section even though it was lowest payout.,"{'content': [6.06, 4.7, ['ok'], 1]}",6.06,4.7
+Scott got the expected outcome and walks away with 30 dollars. While it's not 50 or 90; I imagine that he is still somewhat happy; though perhaps a little sad that it wasn't more.,"{'sad': [1.61, 4.13, ['sad'], 1], 'happy': [1.79, 3.51, ['not happy'], 1]}",1.7,3.82
+Alex is not pleased with the result. The $90 was close to the same size as the $30; but he didn't quite land on it.,"{'happy': [2.0, 4.03, ['not pleased'], 1]}",2.0,4.03
+Jake is somewhat disappointed to have won $30. He is not too surprised; though; since this was the greatest probability of happening. He feels that is better to have won something than nothing at all.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'surprised': [2.54, 2.54, ['not surprised'], 1]}",2.46,3.73
+I think Frank feels okay about the outcome of his spin.  He won a moderate cash prize; as opposed to the lowest.,"{'content': [6.06, 4.7, ['okay'], 1]}",6.06,4.7
+Bob wishes he would have won the $90 since there was about 1/3 chance of getting it; but at the same time he's glad that he won $50 instead of $30 with such a high chance of winning $30.,"{'fortunate': [7.09, 5.16, ['wishes', 'glad'], 2]}",7.09,5.16
+Pleased,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+bittersweet; happy to get 50 but wishes he could have gotten 90,"{'fortunate': [7.09, 5.16, ['wishes'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.65,5.83
+he is happy he won some money,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+John beat the odds and wound up with 50 dollars. While he h ad a better chance of getting 90; at least it wasn't 30. It would be a little frustrating not to get the 90; but it's better than getting 30.,"{'annoying': [2.48, 5.61, ['frustrating'], 1]}",2.48,5.61
+He's happy and excited that he won $50.,"{'excited': [7.5, 7.67, ['excited'], 1], 'happy': [1.79, 3.51, ['not happy'], 1]}",4.65,5.59
+Thrilled!!! He won as much as possible!,"{'happy': [8.6, 7.22, ['thrilled'], 1]}",8.6,7.22
+I think he feels really happy about it.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+very happy. ,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Happy because he won the largest amount possible.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+It's a close call; so that might be a relief between the $30 and the $90. That isn't really surprising though because those had the highest odds.,"{'surprised': [7.47, 7.47, ['surprising'], 1]}",7.47,7.47
+He is disappointed he won the least amount.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Great but maybe hoping it was more,"{'great': [8.5, 8.5, ['great'], 1], 'inspired': [7.1, 5.78, ['hoping'], 1]}",7.8,7.14
+George is probably a little disappointed.  He obviously missed the highest amount with the greatest chance.  He may buy a half a tank of gas on his way home...He may believe it wasn't worth his time even playing.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Josh feels crappy. Not only did he get the smallest amount; but the largest amount was more than half of the wheel making it very fairly likely to get. In addition; the second highest amount was yet another decent size section.,"{'content': [3.95, 5.3, ['not decent'], 1], 'unfortunate': [2.0, 4.0, ['crappy'], 1]}",2.97,4.66
+he is glad he won something but at the same time he is sad it was not more,"{'sad': [1.61, 4.13, ['sad'], 1], 'fortunate': [7.09, 5.16, ['glad'], 1]}",4.35,4.65
+Very Disappointed.  He got the lowest possible prize; while the highest prize had significantly high odds of winning.,"{'disappointed': [7.61, 5.08, ['not disappointed'], 1]}",7.61,5.08
+Jacob is slightly happy that he won $20. He is disappointed not to have won $90; though. It was clear that he had the greatest odds of winning $90.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.31,5.71
+Disappointed to be so close to $90,"{'disappointed': [7.61, 5.08, ['not disappointed'], 1]}",7.61,5.08
+Smiles; but no difference,{},0,0
+Mike is most likely dissatisfied with his spin since the chance of spinning $20 was lower than the chance of spinning $90.,"{'unhappy': [2.39, 4.66, ['dissatisfied'], 1]}",2.39,4.66
+Charlie is probably a little upset since there was a higher chance to earn more money. However; he still made $20 for just spinning a wheel and shouldn't feel too bad about it.,"{'unfortunate': [2.0, 4.0, ['bad'], 1], 'sad': [2.0, 5.86, ['upset'], 1]}",2.0,4.93
+Upset because he didn't win more; but probably glad that he won something.,"{'fortunate': [7.09, 5.16, ['glad'], 1], 'sad': [2.0, 5.86, ['upset'], 1]}",4.55,5.51
+Charlie is more than likely disappointed in his spin.  He missed the largest section of the wheel which happened to contain the most money.  The section he landed on contains the least amount of money; so he's probably annoyed.,"{'annoying': [3.5, 4.74, ['annoyed'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.95,4.83
+Because of the amount of space that 90 occupied he is probably very bummed out that he did not win 90 dollars. He is probably also bummed because the landed stop was close to 50 so that's also a downside.,"{'sad': [5.0, 5.0, ['bummed', 'not bummed'], 2]}",5.0,5.0
+Again; he may be excited about the $50. However; he may have wanted to get the $90. However; it's more than the other option; which was $20.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Good because he landed on the smallest space but won the middle amount.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+He would feel good about it because it was not the lowest payout although it was the smallest section.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Pretty happy,"{'happy': [1.79, 3.51, ['not happy'], 1]}",1.79,3.51
+I think Tom feels very good about winning the $90 prize.  It is the largest amount on the wheel and he had a 50/50 chance of landing on something else.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Bob is very happy.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Steve feels ecstatic. He is leaving with $90 and should be very happy since it was the highest amount.,"{'excited': [8.66, 6.92, ['ecstatic'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",8.44,6.71
+Bob is ecstatic that he won the maximum amount of money from this spin. This wheel definitely favors the spinner.,"{'excited': [8.66, 6.92, ['ecstatic'], 1]}",8.66,6.92
+Dissappointed,"{'disappointed': [2.37, 4.99, ['dissappointed'], 1]}",2.37,4.99
+The player will feel very disappointed when he sees the result. He would definitely have expected more; and it will leave him depressed if he leaves empty handed.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'sad': [1.83, 4.72, ['depressed'], 1]}",2.12,4.82
+He is disappointed because he did not win anything; but he was excited for a minute because he came so close to winning something. ,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'excited': [2.5, 2.33, ['not excited'], 1]}",2.45,3.63
+Dejected. He got the lowest probability spin. ,"{'neglected': [2.63, 4.83, ['dejected'], 1]}",2.63,4.83
+Meh,{},0,0
+Upset. Even a $40 win would've been better than this. :(,"{'sad': [2.0, 5.86, ['upset'], 1]}",2.0,5.86
+He is sad he didnt win anything. ,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+George is very upset with the outcome. He believes he deserves to win some money.,"{'sad': [2.0, 5.86, ['upset'], 1]}",2.0,5.86
+I'm sure he is glad that he won some money; seeing as there was a chance that he could have won nothing.,"{'fortunate': [7.09, 5.16, ['glad'], 1]}",7.09,5.16
+Pretty happy that he didn't get 0$,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+He is disappointed he didnt win the most but satisfied he didnt win the least.,"{'content': [7.94, 4.95, ['satisfied'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1]}",5.17,4.93
+I think he feels relieved that he didn't get zero and slightly happy with his winnings.,"{'happy': [8.22, 6.49, ['happy'], 1], 'fortunate': [7.09, 5.16, ['relieved'], 1]}",7.65,5.83
+Relieved that he didn't get 0 dollars. But probably bummed out that he didn't more than twice that amount that he won by landing on 95; but he's probably happy regardless about 40 dollars.,"{'happy': [8.22, 6.49, ['happy'], 1], 'sad': [2.39, 4.78, ['bummed'], 1], 'fortunate': [7.09, 5.16, ['relieved'], 1]}",5.9,5.48
+Josh is excited to win anything at all.  That $0 on the wheel was making him nervous.  Although the odds were equal at winning any amount; he's happy he won something.  It would have been nicer if he would have landed on $95.,"{'nervous': [3.29, 6.59, ['nervous'], 1], 'excited': [7.5, 7.67, ['excited'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",6.34,6.92
+better that nothing,{},0,0
+Charlie is happy with winning $40 because he could have gotten $0.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Jacob probably expected to spin $40 since that section of the wheel is greater than that of $95 and $0.,{},0,0
+Eric is probably elated that he won $95; seeing as it was the best possible outcome and there was a good chance he'd win less money or even nothing at all.,"{'excited': [7.45, 6.21, ['elated'], 1], 'happy': [7.47, 5.43, ['good'], 1]}",7.46,5.82
+Extremely happy. Highest prize when there was a chance of winning nothing.  Middle prize had highest odds so he conquered the odds.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+very relieved. big difference between winning and losing in this game and chances of winning were high. ,"{'fortunate': [7.09, 5.16, ['relieved'], 1]}",7.09,5.16
+really happy; he won the highest amount.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+The player will be extremely happy at the outcome; as it is the highest amount on the board.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+He is excited he won the most.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+He would feel like jumping up and down!,"{'excited': [8.66, 6.92, ['jumping'], 1], 'sad': [2.13, 5.07, ['down'], 1]}",5.4,6.0
+Probably pretty excited that he won; but he may be disappointed that he didn't get the $50 or the $75. That's what I normally see on game shows.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'excited': [7.5, 7.67, ['excited'], 1]}",4.95,6.3
+He is content he won the smallest about but he had a larger probability to get that amount.,"{'content': [7.06, 4.7, ['content'], 1]}",7.06,4.7
+He is probably very unhappy because of the fact that the spinner stopped VERY CLOSE to the 75 dollars section. Seriously; he must be upset and unhappy.,"{'sad': [1.72, 4.74, ['unhappy', 'upset'], 3]}",1.72,4.74
+Charlie is likely upset; as he won the lowest amount possible.,"{'sad': [2.0, 5.86, ['upset'], 1]}",2.0,5.86
+Bob most likely expected to spin $10; but was hoping for $50 or $75. The chance of spinning $10; however; was much greater.,"{'inspired': [7.1, 5.78, ['hoping'], 1]}",7.1,5.78
+Tom is disappointed he didn't win more.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Eric should not be surprised at winning the lowest.  Over half the wheel was the lowest amount.  At least its probably more than what he had prior to playing so he should be happy.,"{'surprised': [2.54, 2.54, ['not surprised'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.38,4.51
+Mike is very disappointed he did not win more then just 10 dollars\n,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Josh is displeased; but he understands the outcome. He had a very high chance of only winning $10.,"{'unhappy': [7.21, 4.37, ['not displeased'], 1]}",7.21,4.37
+Alex is probably sad and frustrated that he got a wheel with a very high chance of getting little money.,"{'annoying': [2.48, 5.61, ['frustrated'], 1], 'sad': [1.61, 4.13, ['sad'], 1]}",2.05,4.87
+Bob feels great about winning $50.  He knew his chances of winning $10 was much higher than landing on $50.,"{'great': [8.5, 8.5, ['great'], 1]}",8.5,8.5
+Jacob probably feels pretty good with his results. He didn't get the least amount of money which was attached to the largest part of the pie (wheel) but received the middle amount which isn't terrible. ,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Happy because he won the middle amount on the wheel.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+David is pleased with the results. He avoided the large $10 area and managed to win the middle amount of $50.,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+he is happy to win the middle amount,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+John is reasonably happy to have won $50. He would have preferred to win $75; but he is very happy that the marker wheel didn't stop at $10; since this was the highest probability.,"{'happy': [8.22, 6.49, ['happy'], 2]}",8.22,6.49
+wow not bad,"{'unfortunate': [8.0, 6.0, ['not bad'], 1]}",8.0,6.0
+Yay for the most money! Especially since that wasn't the highest odds.,"{'great': [9.0, 7.0, ['yay'], 1]}",9.0,7.0
+Charlie is extremely happy with his outcome. He has won the most money possible.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+He feels excited and lucky; as the chances for winning the $ 75 weren't that high.,"{'excited': [7.5, 7.67, ['excited'], 1], 'fortunate': [8.17, 6.53, ['lucky'], 1]}",7.84,7.1
+lucky and happy. gunslinger won out.,"{'happy': [8.22, 6.49, ['happy'], 1], 'fortunate': [8.17, 6.53, ['lucky'], 1]}",8.2,6.51
+Tom feels cheated that he had more than a 50% chance of winning $70 but instead he won the smaller amount ($55).,"{'unfortunate': [2.0, 4.0, ['cheated'], 1]}",2.0,4.0
+Though it is the least amount in the wheel. he will be happy with the amount won as it is a good amount.,"{'happy': [7.84, 5.96, ['happy', 'good'], 2]}",7.84,5.96
+Jacob feels okay about it. Even though it would have been better to land on the higher prizes; $55 still isn't too bad. ,"{'content': [6.06, 4.7, ['okay'], 1], 'unfortunate': [2.0, 4.0, ['bad'], 1]}",4.03,4.35
+Well; that was a bit close to $85; so that might be disappointing. It's also the lowest amount of money and the $70 had the biggest odds.,"{'disappointed': [2.39, 4.92, ['disappointing'], 1]}",2.39,4.92
+a little sad. won the least money possible. odds were he would win more based on the portions of the other amounts.,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+Tom is happy with $55; but he really wanted it to be more. If he would have spun at a different speed he believes he could have won more money.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Eric is content with his $55 even though it is the smallest amount.,"{'content': [7.06, 4.7, ['content'], 1]}",7.06,4.7
+He probably feels pretty good. He won the middle amount; though he had over a 50% chance of winning that much; anyway.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+James feels slightly disappointed that he didn't win the largest amount of $85; but he's happy that he got more than the minimum of $55.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",5.31,5.71
+John is on a roll today,{},0,0
+Happy because he won the second largest amount possible.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Jacob is happy and he was expecting to land on $70 anyways as it has the higher probability.  Jacob knew the other ones would be a longshot. ,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+John is very happy.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+very happy. can't go wrong with getting the highest chance of 70$,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+He feels happy and excited.,"{'excited': [7.5, 7.67, ['excited'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.86,7.08
+Very excited and enthusiastic that he won the highest amount that you are able to win with a spin. ,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Frank couldn't be any more pleased with the amount of money he won.  The outcome could not have been any better.,"{'happy': [8.01, 5.97, ['pleased'], 1]}",8.01,5.97
+Woe that is super,"{'great': [1.0, 4.0, ['not super'], 1]}",1.0,4.0
+James should be happy.  He hit the highest amount with the lowest chance.  I don't think he really could have gone wrong spinning because any of the amounts were pretty good winnings.,"{'happy': [7.84, 5.96, ['happy', 'good'], 2]}",7.84,5.96
+He would feel pretty lucky to win so much!,"{'fortunate': [8.17, 6.53, ['lucky'], 1]}",8.17,6.53
+he is overjoyed because the won the highest amount he could have,"{'excited': [8.66, 6.92, ['overjoyed'], 1]}",8.66,6.92
+Exciting because it was the most money. It also had low odds.,"{'excited': [7.5, 7.67, ['exciting'], 1]}",7.5,7.67
+Happy because he won the largest amount and the are was small.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Great he would feel because it was a smaller section with highest payout.,"{'great': [8.5, 8.5, ['great'], 1]}",8.5,8.5
+Steve is excited he won the largest amount of money.,"{'excited': [7.5, 7.67, ['excited'], 1]}",7.5,7.67
+Some what disappointed.  He got the lowest prize.  The middle prize had the highest odds of winning.,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Frank is likely upset; as he had the greatest chance of winning $75 dollars (~50% of the wheel); but only won $50; which is likely to upset him 1) because it is less than $75; 2) it is the least amount of money on the wheel; and 3) he had lower odds of winning $50 than $75.,"{'sad': [2.0, 5.86, ['upset'], 2]}",2.0,5.86
+sad since he won the least amount of money possible especially with the size of the other two options.,"{'sad': [1.61, 4.13, ['sad'], 1]}",1.61,4.13
+He would feel happy!,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Happy and Excited.,"{'excited': [7.5, 7.67, ['excited'], 1], 'happy': [8.22, 6.49, ['happy'], 1]}",7.86,7.08
+Disappointed but can't complain,"{'disappointed': [2.39, 4.92, ['disappointed'], 1]}",2.39,4.92
+Scott won the middle amount with about 50% probability of being landed on. He probably feels pretty good.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+This would be the expected outcome; I'd imagine; so Frank probably feels pretty happy with how things turned out.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Satisfied.  He hot the middle prize; but that had the most likely odds of winning.  Could have done better or worse.,"{'content': [7.94, 4.95, ['satisfied'], 1]}",7.94,4.95
+I think he feels neutral-good; he knew he was going to win a nice amount of money no matter what bbut he got a little more than he was expecting.,{},0,0
+Frank feels pretty good about it. He won the second largest amount which was also the largest section which made it likely to get.,"{'happy': [7.47, 5.43, ['good'], 1]}",7.47,5.43
+Jake is happy because he won the median amount; it was more likely that he would land on the $75 amount than any other.,"{'happy': [8.22, 6.49, ['happy'], 1]}",8.22,6.49
+Excited he won more than 50 but disappointed that he didnt win 90. Overall he is satisfied. ,"{'content': [7.94, 4.95, ['satisfied'], 1], 'disappointed': [2.39, 4.92, ['disappointed'], 1], 'excited': [7.5, 7.67, ['excited'], 1]}",5.95,5.85
+George was prepared to win 75 because it was such a large percentage of the wheel.  He was neither ecstatic nor sad about his winnings; but content.,"{'content': [7.06, 4.7, ['content'], 1], 'excited': [8.66, 6.92, ['ecstatic'], 1], 'sad': [1.61, 4.13, ['sad'], 1]}",5.78,5.25

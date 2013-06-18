@@ -65,6 +65,7 @@ alright,content,6.06,-1.42,4.7,-2.54
 decent,content,6.06,-1.42,4.7,-2.54
 ok,content,6.06,-1.42,4.7,-2.54
 neutral,content,5,-1.42,4.7,-2.54
+neutralgood,content,6.06,-1.42,4.7,-2.54
 curious,curious,6.08,-1.63,5.82,-1.64
 skeptical,curious,4.52,-1.63,4.91,-1.92
 suspicious,curious,3.76,-1.42,6.25,-1.59
@@ -96,6 +97,12 @@ relieved,fortunate,7.09,-2,5.16,-2.62
 wishes,fortunate,7.09,-2,5.16,-2.62
 lucky,fortunate,8.17,-1.06,6.53,-2.34
 wish,fortunate,7.09,-2,5.16,-2.62
+awesome,great,9,0,6,0
+amazing,great,9,0,6,0
+great,great,8.5,0,8.5,0
+excellent,great,9,0,6,0
+yay,great,9,0,7,0
+super,great,9,0,6,0
 cheer,happy,8.1,-1.17,6.12,-2.45
 cheerful,happy,8.1,-1.17,6.12,-2.45
 delight,happy,8.26,-1.04,5.44,-2.88
@@ -218,6 +225,11 @@ surprised,surprised,7.47,-1.56,7.47,-2.09
 surprising,surprised,7.47,-1.56,7.47,-2.09
 thoughtful,thoughtful,7.65,-1.03,5.72,-2.3
 fatigued,tired,3.28,-1.43,2.64,-2.19
+jipped,unfortunate,2,0,4,0
+bad,unfortunate,2,0,4,0
+unlucky,unfortunate,2,0,4,0
+cheated,unfortunate,2,0,4,0
+crappy,unfortunate,2,0,4,0
 discomfort,unhappy,2.19,-1.23,4.17,-2.44
 displeased,unhappy,2.79,-2.23,5.64,-2.48
 uncomfortable,unhappy,2.19,-1.23,4.17,-2.44
@@ -225,14 +237,3 @@ dissatisfied,unhappy,2.39,-1.56,4.66,-2.45
 aggressive,violent,5.1,-1.68,5.83,-2.33
 defiant,violent,4.26,-2.12,6.1,-2.51
 insane,violent,2.85,-1.94,5.83,-2.45
-awesome,great,9,0,6,0
-amazing,great,9,0,6,0
-great,great,8.5,0,8.5,0
-excellent,great,9,0,6,0
-yay,great,9,0,7,0
-super,great,9,0,6,0
-jipped,unfortunate,2,0,4,0
-bad,unfortunate,2,0,4,0
-unlucky,unfortunate,2,0,4,0
-cheated,unfortunate,2,0,4,0
-crappy,unfortunate,2,0,4,0

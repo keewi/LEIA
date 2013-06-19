@@ -15,7 +15,11 @@ neg = False
 punc = ["?",".", ",",":",";"]
 p = False
 very = False #"very" modifier
+vList = ["very","extremely"]
+alittle = False #"a little" modifier
+aList = ["little","kind","pretty","somewhat"]
 conj = ["but","and","or","yet","nor","for","also","so"]
+#NOTE: When adding modifiers, add here Mod(1/7)
 
 def reset():
 #Resets variables
@@ -23,10 +27,8 @@ def reset():
 	pile.clear()
 	aP.clear()
 	del total[0:len(total)]
-	global neg, p
-	p = False
-	neg = False
-	very = False
+	global neg, p, very, alittle
+	p, neg, very, alittle = (False,)*4 #Mod(2/7)
 
 def displayDB():
 #Display Words and Information
@@ -36,8 +38,7 @@ def displayDB():
 
 def totalVA():
 #Analyzes and records total entry valence and arousal
-	t0 = []
-	t1 = []
+	t0, t1 = [], []
 	for k in keys:
 		t0.extend(pile[k][0])
 		t1.extend(pile[k][1])
@@ -46,22 +47,28 @@ def totalVA():
 
 def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
-	global neg
-	global very
-	if very:
+	global neg, very, alittle #Mod(3/7)
+	#Check order?
+	delta = 0
+	if very: #emphasizes by 1
 		very = False
-		if val > 5: 
-			val += 1
-			ar += 1
-		else:
-			val -= 1
-			ar -= 1
+		if val > 5: delta += 1
+		else: delta -= 1
 		word = "very "+word	
+	if alittle: #de-emphasizes by 1
+		alittle = False
+		if val > 5: delta -= 1
+		else: delta += 1
+		word = "a little "+word
 	if neg: #Should negations completely flip val/ar? Or should it be a translation ~4.5 or so
 		neg = False
 		val = 9-val
 		ar = 9-ar
 		word = "not "+word
+
+	val = val + delta #Note: modifications are based off ORIGINAL valences, before negations
+	ar = ar + delta
+	#Mod(4/7): add changes to val/ar/word
 	if synset in keys:
 		(pile[synset][0]).append(val)
 		(pile[synset][1]).append(ar)
@@ -74,19 +81,16 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise
-	global neg
-	global very
-	global p
+	global neg, very, p, alittle #Mod(5/7)
 	def unpunctuate(word):
 	#recurse to find and keep characters, recycle rest (out of ascii range)
-		global neg
+		global p
 		if len(word) > 0:
 			c = word[0]
 			ascii = ord(c)
 			if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
 				return c + unpunctuate(word[1:])
-			if (c in punc) and (neg or very):
-				global p
+			if (c in punc):
 				p = True #Removes overflow for negations into following sentences
 			return unpunctuate(word[1:])
 		#should some punctuation be defined as modifiers? (ex. ! vs .)
@@ -94,21 +98,20 @@ def searchWord(target):
 	target = unpunctuate(target)
 	if (target == "not") or (target[-3:] == "dnt" or target[-3:] == "snt"): #Ref: 51, 285
 		neg = True
-	elif (target == "very"): #Ref: 60, 198
+	elif (target in vList): #Ref: 60, 198, 187 (really), 350 (extremely)
 		very = True
+	elif (target in aList): #Ref: 106
+		alittle = True
+	#Mod(6/7)
 	elif (target in conj): #Resets after a "but" (ex. didn't win, but is happy) #Ref: 34 (and), 206 (but)
-		very = False
-		neg = False
+		very, neg, alittle = (False,)*3
 	found = None
 	for x in data:	
 		if x[0] == target:
 			addToPile(x)
 			found = x
 	if p:
-		p = False
-		neg = False
-		very = False
-
+		p, neg, very, alittle = (False,)*4 #Mod(7/7)
 	return found
 
 def avg(list):
@@ -117,11 +120,6 @@ def avg(list):
 		avg = (sum(list)/len(list))
 		return math.ceil(avg*100)/100
 	return 0
-
-def analyzePile():
-#Analyzes pile, saves as aP
-	for synset in keys:
-		aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
 
 def displayAnalyzed():
 #Prints results
@@ -137,6 +135,10 @@ def textAnalysis(text):
 	words = text.split()
 	for s in words:
 		searchWord(s)
+	def analyzePile():
+	#Analyzes pile, saves as aP
+		for synset in keys:
+			aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
 	analyzePile()
 	totalVA()
 
@@ -148,18 +150,11 @@ def dataAnalysis():
 			reader = csv.reader(f)
 			d = open("results.csv","w")
 			dw = csv.writer(d, lineterminator = '\n')
-			# nw = csv.writer(open("newWordsFound.csv","w"), lineterminator = '\n')
 			dw.writerow(['Input', 'Analysis', 'Overall Valence', 'Overall Arousal'])
 			for row in reader:
 				for x in row:
 					textAnalysis(x)
 					dw.writerow([x, aP, total[0], total[1]])
-					#THIS IS FOR ADDING NEW WORDS!!(below) - also, the nw line above
-					# if len(keys) == 0:
-					# 	print x
-					# 	newWords = ((raw_input("\nInput new emotion words: ")).lower()).split()
-					# 	for w in newWords:
-					# 		nw.writerow([w])
 			print "\nDone! Results have been saved as results.csv"
 	except IOError:
 		print "Could not read file: ", doc

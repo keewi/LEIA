@@ -47,11 +47,6 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
 	global neg
 	global very
-	if neg:
-		neg = False
-		val = 9-val
-		ar = 9-ar
-		word = "not "+word
 	if very:
 		very = False
 		if val > 5: 
@@ -60,7 +55,14 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		else:
 			val -= 1
 			ar -= 1
-		word = "very "+word
+			print val
+		word = "very "+word	
+	if neg:
+		neg = False
+		val = 9-val
+		ar = 9-ar
+		word = "not "+word
+
 	if synset in keys:
 		(pile[synset][0]).append(val)
 		(pile[synset][1]).append(ar)
@@ -92,7 +94,7 @@ def searchWord(target):
 	target = unpunctuate(target)
 	if (target == "not") or (target[-3:] == "dnt" or target[-3:] == "snt"): #Ref: 51, 285
 		neg = True
-	if (target == "very"):
+	if (target == "very"): #Ref: 60
 		very = True
 	for x in data:	
 		if x[0] == target:

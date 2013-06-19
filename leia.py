@@ -14,6 +14,7 @@ total = []
 neg = False
 punc = ["?",".", ",",":",";"]
 p = False
+very = False #"very" modifier
 
 def reset():
 #Resets variables
@@ -24,6 +25,7 @@ def reset():
 	global neg, p
 	p = False
 	neg = False
+	very = False
 
 def displayDB():
 #Display Words and Information
@@ -36,21 +38,29 @@ def totalVA():
 	t0 = []
 	t1 = []
 	for k in keys:
-		for num in pile[k][0]: 
-			t0.append(num)
-		for num in pile[k][1]: 
-			t1.append(num)
+		t0.extend(pile[k][0])
+		t1.extend(pile[k][1])
 	total.append(avg(t0))
 	total.append(avg(t1))
 
 def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
 	global neg
+	global very
 	if neg:
 		neg = False
 		val = 9-val
 		ar = 9-ar
 		word = "not "+word
+	if very:
+		very = False
+		if val > 5: 
+			val += 1
+			ar += 1
+		else:
+			val -= 1
+			ar -= 1
+		word = "very "+word
 	if synset in keys:
 		(pile[synset][0]).append(val)
 		(pile[synset][1]).append(ar)
@@ -64,6 +74,7 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise
 	global neg
+	global very
 	def unpunctuate(word):
 	#recurse to find and keep characters, recycle rest (out of ascii range)
 		global neg
@@ -72,7 +83,7 @@ def searchWord(target):
 			ascii = ord(c)
 			if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
 				return c + unpunctuate(word[1:])
-			if (c in punc) and neg:
+			if (c in punc) and (neg or very):
 				global p
 				p = True #Removes overflow for negations into following sentences
 			return unpunctuate(word[1:])
@@ -81,12 +92,15 @@ def searchWord(target):
 	target = unpunctuate(target)
 	if (target == "not") or (target[-3:] == "dnt" or target[-3:] == "snt"): #Ref: 51, 285
 		neg = True
+	if (target == "very"):
+		very = True
 	for x in data:	
 		if x[0] == target:
 			addToPile(x)
 			return x
-	if p and neg:	
+	if p and (neg or very):	
 		neg = False
+		very = False
 	return None
 
 def avg(list):
@@ -128,7 +142,6 @@ def dataAnalysis():
 			dw = csv.writer(d, lineterminator = '\n')
 			# nw = csv.writer(open("newWordsFound.csv","w"), lineterminator = '\n')
 			dw.writerow(['Input', 'Analysis', 'Overall Valence', 'Overall Arousal'])
-			
 			for row in reader:
 				for x in row:
 					textAnalysis(x)
@@ -139,9 +152,7 @@ def dataAnalysis():
 					# 	newWords = ((raw_input("\nInput new emotion words: ")).lower()).split()
 					# 	for w in newWords:
 					# 		nw.writerow([w])
-
 			print "\nDone! Results have been saved as results.csv"
-	
 	except IOError:
 		print "Could not read file: ", doc
 

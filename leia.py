@@ -12,10 +12,10 @@ pile = {} #{Synset : [[Vals], [Ars], [Words], freq]}
 aP = {} #{Synset : [Val, Ar, [Words], freq]}
 total = []
 neg = False
-punc = ["?",".", ",",":",";"]
+punc = ["?",".", ",",":",";","!"]
 p = False
 very = False #"very" modifier
-vList = ["very","extremely"]
+vList = ["very","extremely", "really"]
 alittle = False #"a little" modifier
 aList = ["little","kind","pretty","somewhat"]
 conj = ["but","and","or","yet","nor","for","also","so"]
@@ -135,11 +135,9 @@ def textAnalysis(text):
 	words = text.split()
 	for s in words:
 		searchWord(s)
-	def analyzePile():
 	#Analyzes pile, saves as aP
-		for synset in keys:
-			aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
-	analyzePile()
+	for synset in keys:
+		aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
 	totalVA()
 
 def dataAnalysis():

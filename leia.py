@@ -55,14 +55,12 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		else:
 			val -= 1
 			ar -= 1
-			print val
 		word = "very "+word	
-	if neg:
+	if neg: #Should negations completely flip val/ar? Or should it be a translation ~4.5 or so
 		neg = False
 		val = 9-val
 		ar = 9-ar
 		word = "not "+word
-
 	if synset in keys:
 		(pile[synset][0]).append(val)
 		(pile[synset][1]).append(ar)
@@ -77,6 +75,7 @@ def searchWord(target):
 #Returns tuple with target word and information, None otherwise
 	global neg
 	global very
+	global p
 	def unpunctuate(word):
 	#recurse to find and keep characters, recycle rest (out of ascii range)
 		global neg
@@ -94,13 +93,18 @@ def searchWord(target):
 	target = unpunctuate(target)
 	if (target == "not") or (target[-3:] == "dnt" or target[-3:] == "snt"): #Ref: 51, 285
 		neg = True
-	if (target == "very"): #Ref: 60
+	elif (target == "very"): #Ref: 60, 198
 		very = True
+	elif (target == "but"): #Resets after a "but" (ex. didn't win, but is happy) #Ref: 206
+		very = False
+		neg = False
+	print neg, target, p
 	for x in data:	
 		if x[0] == target:
 			addToPile(x)
 			return x
-	if p and (neg or very):	
+	if p:
+		p = False	
 		neg = False
 		very = False
 	return None

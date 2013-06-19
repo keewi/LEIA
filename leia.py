@@ -15,6 +15,7 @@ neg = False
 punc = ["?",".", ",",":",";"]
 p = False
 very = False #"very" modifier
+conj = ["but","and","or","yet","nor","for","also","so"]
 
 def reset():
 #Resets variables
@@ -95,19 +96,20 @@ def searchWord(target):
 		neg = True
 	elif (target == "very"): #Ref: 60, 198
 		very = True
-	elif (target == "but"): #Resets after a "but" (ex. didn't win, but is happy) #Ref: 206
+	elif (target in conj): #Resets after a "but" (ex. didn't win, but is happy) #Ref: 34 (and), 206 (but)
 		very = False
 		neg = False
-	print neg, target, p
+	found = None
 	for x in data:	
 		if x[0] == target:
 			addToPile(x)
-			return x
+			found = x
 	if p:
-		p = False	
+		p = False
 		neg = False
 		very = False
-	return None
+
+	return found
 
 def avg(list):
 #Returns average of a list of numbers

@@ -25,3 +25,4 @@ def byHand ():
 			w = (raw_input("Enter word: ")).lower()
 	if w == "back":
 		byHand()
+byHand()

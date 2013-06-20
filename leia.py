@@ -15,7 +15,7 @@ neg = False
 punc = ["?",".", ",",":",";","!"]
 p = False
 very = False #"very" modifier
-vList = ["very","extremely", "really","max"] #Ref: 214 (max)
+vList = ["very","extremely", "really","max","too"] #Ref: 214 (max), 59 (too)
 alittle = False #"a little" modifier
 aList = ["little","kind","sort","pretty","somewhat","slightly","rather","mildly"]
 conj = ["but","and","or","yet","nor","for","also","so","any"]
@@ -59,10 +59,12 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		if val > 5: delta -= 1
 		else: delta += 1
 		word = "a little "+word
-	if neg: #Should negations completely flip val/ar? Or should it be a translation ~4.5 or so
+	if neg: 
 		neg = False
-		val = 9-val
-		ar = 9-ar
+		if val > 5: delta -= (val-4.5)*1.5
+		else: delta += (4.5-val)*1.5 #Not very sad, not very surprised
+		# val = 9-val #Sets so that negations flips val/ar
+		# ar = 9-ar
 		word = "not "+word
 
 	val = val + delta #Note: modifications are based off ORIGINAL valences, before negations

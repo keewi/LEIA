@@ -15,10 +15,10 @@ neg = False
 punc = ["?",".", ",",":",";","!"]
 p = False
 very = False #"very" modifier
-vList = ["very","extremely", "really"]
+vList = ["very","extremely", "really","max"] #Ref: 214 (max)
 alittle = False #"a little" modifier
-aList = ["little","kind","pretty","somewhat"]
-conj = ["but","and","or","yet","nor","for","also","so"]
+aList = ["little","kind","sort","pretty","somewhat","slightly","rather","mildly"]
+conj = ["but","and","or","yet","nor","for","also","so","any"]
 #NOTE: When adding modifiers, add here Mod(1/7)
 
 def reset():
@@ -48,7 +48,6 @@ def totalVA():
 def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
 	global neg, very, alittle #Mod(3/7)
-	#Check order?
 	delta = 0
 	if very: #emphasizes by 1
 		very = False

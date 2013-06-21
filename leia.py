@@ -61,8 +61,8 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		word = "a little "+word
 	if neg: 
 		neg = False
-		if val > 5: delta -= (val-4.5)*1.5
-		else: delta += (4.5-val)*1.5 #Not very sad, not very surprised
+		if val > 5: delta -= (val-4.5)*1.3
+		else: delta += (4.5-val)*1.3 #Not very sad, not very surprised
 		# val = 9-val #Sets so that negations flips val/ar
 		# ar = 9-ar
 		word = "not "+word

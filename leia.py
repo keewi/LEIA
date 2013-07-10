@@ -122,12 +122,13 @@ def avg(list):
 		return math.ceil(avg*100)/100
 	return 0
 
-def displayAnalyzed():
-#Prints results
-	print "\nRESULTS: "
-	print "Synset\t\tFreq.\tAvg.Valence\tAvg.Arousal\tWords"
-	for s in keys: #NEED TO DO: make the spacing work
-		print s, "\t\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
+# def displayAnalyzed():
+# #Prints results
+# 	print keys
+# 	print "\nRESULTS: "
+# 	print "Synset\t\tFreq.\tAvg.Valence\tAvg.Arousal\tWords"
+# 	for s in keys: #NEED TO DO: make the spacing work
+# 		print s, "\t\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
 
 def textAnalysis(text):
 #Analyzes a single passage
@@ -157,45 +158,85 @@ def dataAnalysis():
 			print "\nDone! Results have been saved as results.csv"
 	except IOError:
 		print "Could not read file: ", doc
+def opt1(word):
+	target = word.lower()
+	find = searchWord(target)
+	if find == None:
+		print "Not found."
+	else:
+		print "Synset:          ", find[1]
+		print "Valence:        ", find[2]
+		print "Valence(sd):  ", find[3]
+		print "Arousal:         ", find[4]
+		print "Arousal(sd):  ", find[5]
+		print ""
 
-def menu():
-#Main menu
-	print """MENU:
-1. Single Word Analysis
-2. I/O Text Analysis
-3. Data Analysis
-4. Display Database
-5. Quit\n"""
-	answer = raw_input("Please choose an option: ")
+def opt2(text):
+	textAnalysis(text)
+	print "OVERALL VALENCE: ",total[0]
+	print "OVERALL AROUSAL: ",total[1]
+	print "DETAILED RESULTS:"
+	print "Synset\t\tFreq.\tAvg.Valence\tAvg.Arousal\tWords"
+	for s in keys: #NEED TO DO: make the spacing work
+		print s, "\t\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
+	print ""
+	
+def opt3(docname):
+	#fix this
+	try:
+		with open(docname, 'r') as f:
+			reader = csv.reader(f)
+			d = open("results.csv","w")
+			dw = csv.writer(d, lineterminator = '\n')
+			dw.writerow(['Input', 'Analysis', 'Overall Valence', 'Overall Arousal'])
+			for row in reader:
+				for x in row:
+					textAnalysis(x)
+					dw.writerow([x, aP, total[0], total[1]])
+			return True
+			print "Done! Results have been saved as results.csv"
+	except IOError:
+		return False
+		print "Could not read file: ", docname
 
-	if answer == "1":
-	#Searches one word
-		target = (raw_input("Enter word: ")).lower()
-		find = searchWord(target)
-		if find == None:
-			print "Not found."
-		else:
-			print "\nRESULTS: "
-			print "Synset:      ", find[1]
-			print "Valence:     ", find[2]
-			print "Valence(sd): ", find[3]
-			print "Arousal:     ", find[4]
-			print "Arousal(sd): ", find[5]
-			print "\n Done."
+# def menu():
+# #Main menu
+# 	print """MENU:
+# 1. Single Word Analysis
+# 2. I/O Text Analysis
+# 3. Data Analysis
+# 4. Display Database
+# 5. Quit\n"""
+# 	answer = raw_input("Please choose an option: ")
 
-	elif answer == "2":
-	#Searches for words in text input
-		text = raw_input("Enter passage: ")
-		textAnalysis(text)
-		displayAnalyzed()
+# 	if answer == "1":
+# 	#Searches one word
+# 		target = (raw_input("Enter word: ")).lower()
+# 		find = searchWord(target)
+# 		if find == None:
+# 			print "Not found."
+# 		else:
+# 			print "\nRESULTS: "
+# 			print "Synset:      ", find[1]
+# 			print "Valence:     ", find[2]
+# 			print "Valence(sd): ", find[3]
+# 			print "Arousal:     ", find[4]
+# 			print "Arousal(sd): ", find[5]
+# 			print "\n Done."
 
-	elif answer == "3":
-	#Searches for words in passages in a csv file
-		dataAnalysis()
+# 	elif answer == "2":
+# 	#Searches for words in text input
+# 		text = raw_input("Enter passage: ")
+# 		textAnalysis(text)
+# 		displayAnalyzed()
 
-	elif answer == "4":
-		displayDB()
+# 	elif answer == "3":
+# 	#Searches for words in passages in a csv file
+# 		dataAnalysis()
 
-menu()
+# 	elif answer == "4":
+# 		displayDB()
+
+# menu()
 
 # input("Press Enter when done...")#Enable when directly running

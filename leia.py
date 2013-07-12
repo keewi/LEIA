@@ -6,14 +6,13 @@ cr = csv.reader(open("db.csv", "r"))
 data = [(row[0], row[1], row[2],row[3],row[4],row[5]) for row in cr]
 data.sort(key = itemgetter(2))
 blankdata = []
-for row in data:
+for row in data: #takes out all blanks and puts into blankdata, for future use
 	if row[2]=='':
 		blankdata.append(row)
 		data = data[1:]
-		print "blank found!",row
 	else:
 		break
-data = [(row[0], row[1], float(row[2]), float(row[3]), float(row[4]), float(row[5])) for row in data]
+data = [(row[0], row[1], float(row[2]), float(row[3]), float(row[4]), float(row[5])) for (row) in data]
 data.sort(key = itemgetter(0))
 #Data is sorted list of database
 
@@ -39,6 +38,9 @@ def reset():
 	del total[0:len(total)]
 	global neg, p, very, alittle
 	p, neg, very, alittle = (False,)*4 #Mod(2/7)
+
+def getSize():
+	return len(data)
 
 def displayDB():
 #Display Words and Information

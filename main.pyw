@@ -6,7 +6,7 @@
 
 import wx
 from renew import *
-from leia import *
+import leia
 
 
 class MyFrame(wx.Frame):
@@ -46,6 +46,7 @@ class MyFrame(wx.Frame):
         opt2 = wx.Button(panel,-1,"IO Text Analysis")
         opt3 = wx.Button(panel,-1,"Datafile Analysis")
         sync= wx.Button(panel,-1,"Sync Database")
+        about = wx.Button(panel,-1,"About")
         opt4 = wx.Button(panel,-1,"Quit")
 
         # bind the button events to handlers
@@ -54,6 +55,7 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_BUTTON, self.OnTimeForTwo, opt2)
         self.Bind(wx.EVT_BUTTON, self.OnTimeForOne, opt1)
         self.Bind(wx.EVT_BUTTON, self.OnTimeSync, sync)
+        self.Bind(wx.EVT_BUTTON, self.OnTimeAbout, about)
 
         # Use a sizer to layout the controls, stacked vertically and with
         # a 10 pixel border around each
@@ -63,6 +65,7 @@ class MyFrame(wx.Frame):
         sizer.Add(opt2, 0, wx.ALIGN_CENTER, 15)
         sizer.Add(opt3, 0, wx.ALIGN_CENTER, 15)
         sizer.Add(sync,0, wx.ALIGN_CENTER, 15)
+        sizer.Add(about,0, wx.ALIGN_CENTER, 15)
         sizer.Add(opt4, 0, wx.ALIGN_CENTER, 15)
         panel.SetSizer(sizer)
         panel.Layout()
@@ -76,6 +79,12 @@ class MyFrame(wx.Frame):
     def OnTimeSync(self, evt):
         run()
 
+    def OnTimeAbout(self, evt):
+        n = str(leia.getSize())
+        msg = wx.MessageDialog(None, "This program is designed to analyze text for emotional words. \n\nNumber of Words in Database: "+n, "About", wx.OK)
+        msg.ShowModal()
+        msg.Destroy()
+
     def OnTimeForOne(self, evt):
         dlg = wx.TextEntryDialog(None,
             "Input word:",
@@ -85,7 +94,7 @@ class MyFrame(wx.Frame):
             word = dlg.GetValue()
             print "WORD SEARCHED: ",word
             print "SINGLE WORD ANALYSIS RESULTS:"
-            opt1(word)
+            leia.opt1(word)
         dlg.Destroy()
 
     def OnTimeForTwo(self, evt):
@@ -97,7 +106,7 @@ class MyFrame(wx.Frame):
             text = dlg.GetValue()
             if text != "":
                 print "TEXT: ",text
-                opt2(text)
+                leia.opt2(text)
         dlg.Destroy()
 
     def OnTimeForThree(self, evt):
@@ -107,7 +116,7 @@ class MyFrame(wx.Frame):
             "file.csv")
         if dlg.ShowModal() == wx.ID_OK:
             docname = dlg.GetValue()
-            if opt3(docname):
+            if leia.opt3(docname):
                 msg = wx.MessageDialog(None,"Done! Results have been saved as results.csv","FINISH",wx.OK)
             else:
                 msg = wx.MessageDialog(None,"Could not find file.","ERROR",wx.OK|wx.ICON_ERROR)

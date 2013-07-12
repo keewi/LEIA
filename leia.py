@@ -80,22 +80,24 @@ def addToPile((word,synset,val,valsd,ar,arsd)):
 		keys.append(synset)
 		pile[synset] = [[val], [ar], [word], 1]
 
+def unpunctuate(word):
+#recurse to find and keep characters, recycle rest (out of ascii range)
+	global p
+	if len(word) > 0:
+		c = word[0]
+		ascii = ord(c)
+		if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
+			return c + unpunctuate(word[1:])
+		if (c in punc):
+			p = True #Removes overflow for negations into following sentences
+		return unpunctuate(word[1:])
+	#should some punctuation be defined as modifiers? (ex. ! vs .)
+	return ""
+	
 def searchWord(target):
 #Returns tuple with target word and information, None otherwise
 	global neg, very, p, alittle #Mod(5/7)
-	def unpunctuate(word):
-	#recurse to find and keep characters, recycle rest (out of ascii range)
-		global p
-		if len(word) > 0:
-			c = word[0]
-			ascii = ord(c)
-			if (ascii>64 and ascii<91) or (ascii>96 and ascii<123):
-				return c + unpunctuate(word[1:])
-			if (c in punc):
-				p = True #Removes overflow for negations into following sentences
-			return unpunctuate(word[1:])
-		#should some punctuation be defined as modifiers? (ex. ! vs .)
-		return ""
+
 	target = unpunctuate(target)
 	if (target == "not") or (target[-3:] == "dnt" or target[-3:] == "snt"): #Ref: 51, 285
 		neg = True
@@ -162,7 +164,7 @@ def opt1(word):
 	target = word.lower()
 	find = searchWord(target)
 	if find == None:
-		print "Not found."
+		print "Not found.\n"
 	else:
 		print "Synset:          ", find[1]
 		print "Valence:        ", find[2]
@@ -180,7 +182,7 @@ def opt2(text):
 	for s in keys: #NEED TO DO: make the spacing work
 		print s, "\t\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
 	print ""
-	
+
 def opt3(docname):
 	#fix this
 	try:
@@ -197,7 +199,7 @@ def opt3(docname):
 			print "Done! Results have been saved as results.csv"
 	except IOError:
 		return False
-		print "Could not read file: ", docname
+		# print "Could not read file: ", docname
 
 # def menu():
 # #Main menu

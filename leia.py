@@ -3,7 +3,17 @@ from operator import itemgetter
 import math
 
 cr = csv.reader(open("db.csv", "r"))
-data = [(row[0], row[1], float(row[2]), float(row[3]), float(row[4]), float(row[5])) for row in cr]
+data = [(row[0], row[1], row[2],row[3],row[4],row[5]) for row in cr]
+data.sort(key = itemgetter(2))
+blankdata = []
+for row in data:
+	if row[2]=='':
+		blankdata.append(row)
+		data = data[1:]
+		print "blank found!",row
+	else:
+		break
+data = [(row[0], row[1], float(row[2]), float(row[3]), float(row[4]), float(row[5])) for row in data]
 data.sort(key = itemgetter(0))
 #Data is sorted list of database
 

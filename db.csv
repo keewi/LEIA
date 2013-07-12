@@ -1,7 +1,7 @@
 admire,confident,7.74,-1.84,6.11,-2.36
 admired,confident,7.74,-1.84,6.11,-2.36
 admiring,confident,7.74,-1.84,6.11,-2.36
-afraid,scared,2.0,-1.28,6.67,-2.54
+afraid,scared,2,-1.28,6.67,-2.54
 aggressive,violent,5.1,-1.68,5.83,-2.33
 alert,alert,6.2,-1.76,6.85,-2.53
 aloof,indifferent,4.9,-1.92,4.28,-2.1
@@ -16,7 +16,7 @@ annoyed,annoying,3.5,-2.18,4.74,-2.42
 annoying,annoying,3.5,-2.18,4.74,-2.42
 anxious,nervous,4.81,-1.98,6.92,-1.81
 arouse,excited,7.97,-1,6.63,-2.7
-aroused,excited,7.97,-1.0,6.63,-2.7
+aroused,excited,7.97,-1,6.63,-2.7
 arousing,excited,7.97,-1,6.63,-2.7
 astonished,surprised,6.56,-1.61,6.58,-2.22
 awed,surprised,6.7,-1.38,5.74,-2.31
@@ -52,7 +52,7 @@ cruel,mean,1.97,-1.67,5.68,-2.65
 curious,curious,6.08,-1.63,5.82,-1.64
 decent,content,6.06,-1.42,4.7,-2.54
 defeat,disappointed,2.34,-1.66,5.09,-3
-defeated,disappointed,2.34,-1.66,5.09,-3.0
+defeated,disappointed,2.34,-1.66,5.09,-3
 defiant,violent,4.26,-2.12,6.1,-2.51
 dejected,neglected,2.63,-1.64,4.83,-2.31
 delight,happy,8.26,-1.04,5.44,-2.88
@@ -74,7 +74,7 @@ disappointed,disappointed,2.39,-1.44,4.92,-2.64
 disappointing,disappointed,2.39,-1.44,4.92,-2.64
 discomfort,unhappy,2.19,-1.23,4.17,-2.44
 discourage,sad,3,-2.16,4.53,-2.11
-discouraged,sad,3.0,-2.16,4.53,-2.11
+discouraged,sad,3,-2.16,4.53,-2.11
 discouraging,sad,3,-2.16,4.53,-2.11
 disdain,contempt,3.68,-1.9,5.04,-2.14
 disdainful,contempt,3.68,-1.9,5.04,-2.14
@@ -97,7 +97,7 @@ embarrass,ashamed,3.03,-1.85,5.87,-2.55
 embarrassed,ashamed,3.03,-1.85,5.87,-2.55
 embarrassing,ashamed,3.03,-1.85,5.87,-2.55
 engage,involved,8,-1.38,6.77,-2.07
-engaged,involved,8.0,-1.38,6.77,-2.07
+engaged,involved,8,-1.38,6.77,-2.07
 engaging,involved,8,-1.38,6.77,-2.07
 enjoy,happy,7.8,-1.2,5.2,-2.72
 enjoying,happy,7.8,-1.2,5.2,-2.72
@@ -118,6 +118,7 @@ feared,scared,2.25,-1.18,6.33,-2.28
 foul,unhappy,2.81,-1.52,4.93,-2.23
 fearful,scared,2.25,-1.18,6.33,-2.28
 frustrate,annoying,2.48,-1.64,5.61,-2.76
+aatest,aatest,,,,
 frustrated,annoying,2.48,-1.64,5.61,-2.76
 frustrating,annoying,2.48,-1.64,5.61,-2.76
 glad,fortunate,7.09,-2,5.16,-2.62
@@ -146,13 +147,13 @@ impressing,impressed,7.33,-1.84,5.42,-2.65
 indifferent,indifferent,4.61,-1.28,3.18,-1.85
 insane,violent,2.85,-1.94,5.83,-2.45
 insecure,ashamed,2.36,-1.33,5.56,-2.34
-inspire,inspired,6.97,-1.91,5.0,-2.53
+inspire,inspired,6.97,-1.91,5,-2.53
 inspired,inspired,7.15,-1.85,6.02,-2.67
 insolent,annoying,4.35,-1.76,5.38,-2.37
 irritate,annoying,3.11,-1.67,5.76,-2.15
 irritated,annoying,3.11,-1.67,5.76,-2.15
 irritating,annoying,3.11,-1.67,5.76,-2.15
-insult,annoying,2.29,-1.33,6.0,-2.46
+insult,annoying,2.29,-1.33,6,-2.46
 insulted,annoying,2.29,-1.33,6,-2.46
 jealous,jealous,2.51,-1.83,6.36,-2.66
 jealousy,jealous,2.51,-1.83,6.36,-2.66
@@ -188,12 +189,12 @@ outrage,angry,3.52,-2.12,6.83,-2.26
 outraged,angry,3.52,-2.12,6.83,-2.26
 outraging,angry,3.52,-2.12,6.83,-2.26
 outstanding,happy,7.75,-1.75,6.24,-2.59
-overwhelmed,excited,4.19,-2.61,7.0,-2.37
+overwhelmed,excited,4.19,-2.61,7,-2.37
 overjoyed,excited,8.66,-1.64,6.92,-2.3
 patient,content,5.29,-1.89,4.21,-2.37
 pleased,happy,8.01,-1.32,5.97,-2.55
 positive,happy,8,-1.32,5.97,-2.55
-pride,confident,7.0,-2.11,5.83,-2.48
+pride,confident,7,-2.11,5.83,-2.48
 prideful,confident,7,-2.11,5.83,-2.48
 protected,safe,7.29,-1.79,4.09,-2.77
 proud,confident,8.03,-1.56,5.56,-3.01
@@ -203,7 +204,7 @@ regretful,regret,2.28,-1.42,5.74,-2.32
 regreting,regret,2.28,-1.42,5.74,-2.32
 rejected,neglected,1.5,-1.09,6.37,-2.56
 rejecting,neglected,1.5,-1.09,6.37,-2.56
-relaxed,calm,7.0,-1.77,2.39,-2.13
+relaxed,calm,7,-1.77,2.39,-2.13
 relaxing,calm,7,-1.77,2.39,-2.13
 relief,fortunate,7.09,-2,5.16,-2.62
 relieved,fortunate,7.09,-2,5.16,-2.62
@@ -224,7 +225,7 @@ scornful,contempt,3.02,-2.03,5.04,-2.56
 scorn,contempt,2.84,-2.07,5.48,-2.52
 scared,scared,2.78,-1.99,6.82,-2.03
 selfish,selfish,2.42,-1.62,5.5,-2.62
-serious,serious,5.08,-1.59,4.0,-1.87
+serious,serious,5.08,-1.59,4,-1.87
 sexy,erotic,8.02,-1.12,7.36,-1.91
 shabby,sad,2.13,-1.45,5.07,-2.54
 shamed,ashamed,2.5,-1.34,4.88,-2.27
@@ -265,9 +266,9 @@ uncomfortable,unhappy,2.19,-1.23,4.17,-2.44
 unhappy,unhappy,1.57,-0.96,4.18,-2.5
 untroubled,calm,7.62,-1.41,3.89,-2.54
 unlucky,unfortunate,2,0,4,0
-upset,sad,2.0,-1.18,5.86,-2.4
+upset,sad,2,-1.18,5.86,-2.4
 upsetting,sad,2,-1.18,5.86,-2.4
-wish,fortunate,7.09,-2.0,5.16,-2.62
+wish,fortunate,7.09,-2,5.16,-2.62
 wishes,fortunate,7.09,-2,5.16,-2.62
-wonder,curious,6.03,-1.58,5.0,-2.23
+wonder,curious,6.03,-1.58,5,-2.23
 yay,great,9,0,7,0

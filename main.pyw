@@ -77,6 +77,14 @@ class MyFrame(wx.Frame):
         self.SetSizer(sizer)
         
     def OnTimeSync(self, evt):
+        #Ttest code for R
+        # code = ""
+        # for x in range(1,5):
+        #     for y in range(1,10):
+        #         if y != 6:
+        #             code = code + "v"+str(x)+str(y)+" <- t.test(d$v"+str(x)+"a"+str(y)+", d$v"+str(x)+"b"+str(y)+", na.rm=TRUE)\n"
+        #     code = code + "v"+str(x)+" <- c(v"+str(x)+"1$p.value, v"+str(x)+"2$p.value, v"+str(x)+"3$p.value, v"+str(x)+"4$p.value, v"+str(x)+"5$p.value, v"+str(x)+"7$p.value, v"+str(x)+"8$p.value, v"+str(x)+"9$p.value)\n"
+        # print code
         run()
 
     def OnTimeAbout(self, evt):
@@ -116,12 +124,18 @@ class MyFrame(wx.Frame):
             "file.csv")
         if dlg.ShowModal() == wx.ID_OK:
             docname = dlg.GetValue()
-            if leia.opt3(docname):
-                msg = wx.MessageDialog(None,"Done! Results have been saved as results.csv","FINISH",wx.OK)
-            else:
-                msg = wx.MessageDialog(None,"Could not find file.","ERROR",wx.OK|wx.ICON_ERROR)
-            msg.ShowModal()
-            msg.Destroy()
+            resultsdlg = wx.TextEntryDialog(None, 
+                "Name results file name (must be .csv)",
+                "Datafile Analysis",
+                "results.csv")
+            if resultsdlg.ShowModal()==wx.ID_OK:
+                results = resultsdlg.GetValue()
+                if leia.opt3(docname, results):
+                    msg = wx.MessageDialog(None,"Done! Results have been saved as "+results,"FINISH",wx.OK)
+                else:
+                    msg = wx.MessageDialog(None,"Could not find file.","ERROR",wx.OK|wx.ICON_ERROR)
+                msg.ShowModal()
+                msg.Destroy()
         dlg.Destroy()
 
     def OnTimeToClose(self, evt):

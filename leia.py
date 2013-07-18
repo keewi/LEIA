@@ -156,13 +156,13 @@ def textAnalysis(text):
 		aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
 	totalVA()
 
-def dataAnalysis():
+def dataAnalysis(results):
 #Analyzes each and every entry in a document separately
 	doc = raw_input("Document name (must be .csv): ")
 	try:
 		with open(doc, 'r') as f:
 			reader = csv.reader(f)
-			d = open("results.csv","w")
+			d = open(results,"w")
 			dw = csv.writer(d, lineterminator = '\n')
 			dw.writerow(['Input', 'Analysis', 'Overall Valence', 'Overall Arousal'])
 			for row in reader:
@@ -195,12 +195,12 @@ def opt2(text):
 		print s, "\t\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
 	print ""
 
-def opt3(docname):
+def opt3(docname, results):
 	#fix this
 	try:
 		with open(docname, 'r') as f:
 			reader = csv.reader(f)
-			d = open("results.csv","w")
+			d = open(results,"w")
 			dw = csv.writer(d, lineterminator = '\n')
 			dw.writerow(['Input', 'Analysis', 'Overall Valence', 'Overall Arousal'])
 			for row in reader:

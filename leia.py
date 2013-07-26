@@ -55,7 +55,7 @@ def totalVA():
 		t0.extend(pile[k][0])
 		t1.extend(pile[k][1])
 	total.append(avg(t0))
-	total.append(avg(t1))
+	total.append(max(t1))
 
 def addToPile((word,synset,val,valsd,ar,arsd)):
 #Adds word to records. NEED TO DO: ADD IN SD's!
@@ -136,13 +136,12 @@ def avg(list):
 		return math.ceil(avg*100)/100
 	return 0
 
-# def displayAnalyzed():
-# #Prints results
-# 	print keys
-# 	print "\nRESULTS: "
-# 	print "Synset\t\tFreq.\tAvg.Valence\tAvg.Arousal\tWords"
-# 	for s in keys: #NEED TO DO: make the spacing work
-# 		print s, "\t\t", aP[s][3],"\t",aP[s][0],"\t\t",aP[s][1],"\t\t",aP[s][2]
+def max(list):
+	max = 0
+	if len(list)>0:
+		for elem in list:
+			if elem > max: max = elem
+	return max
 
 def textAnalysis(text):
 #Analyzes a single passage

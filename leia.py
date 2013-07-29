@@ -2,6 +2,7 @@ import csv
 from operator import itemgetter
 import math
 
+#IMPORT DATABASE
 cr = csv.reader(open("db.csv", "r"))
 data = [(row[0], row[1], row[2],row[3],row[4],row[5]) for row in cr]
 data.sort(key = itemgetter(2))
@@ -16,22 +17,24 @@ data = [(row[0], row[1], float(row[2]), float(row[3]), float(row[4]), float(row[
 data.sort(key = itemgetter(0))
 #Data is sorted list of database
 
-keys = []
-pile = {} #{Synset : [[Vals], [Ars], [Words], freq]}
-aP = {} #{Synset : [Val, Ar, [Words], freq]}
-total = []
-neg = False
-punc = ["?",".", ",",":",";","!"]
-p = False
-very = False #"very" modifier
-vList = ["very","extremely", "really","max","too"] #Ref: 214 (max), 59 (too)
-alittle = False #"a little" modifier
-aList = ["little","kind","sort","pretty","somewhat","slightly","rather","mildly"]
-conj = ["but","and","or","yet","nor","for","also","so","any"]
-#NOTE: When adding modifiers, add here Mod(1/7)
+#GLOBAL VARIABLES
+keys = [] #Found synsets
+pile = {} #Found words and synsets. Format: {Synset : [[Vals], [Ars], [Words], freq]}
+aP = {} #Aggregate pile. Format: {Synset : [Calculated Val, Calculated Ar, [Words], freq]}
+total = [] #Total V/A per full text
+neg = False #Negation found = FALSE
+punc = ["?",".", ",",":",";","!"] #Recognized as punctuation characters
+p = False #Punctuation found = FALSE
+very = False #Intensifier found = FALSE
+vList = ["very","extremely", "really","max","too"] #Recognized intensifiers
+alittle = False #Unintensifier found = FALSE
+aList = ["little","kind","sort","pretty","somewhat","slightly","rather","mildly"] #Recognized unintensifiers
+conj = ["but","and","or","yet","nor","for","also","so","any"] #Recognized conjunctions
+#NOTE: When adding new types of modifiers, add to 7 places. This is the first place. Mod(1/7)
+#FUTURE CHANGES: add queue to make it so the order modifiers are found can be preserved and used
 
 def reset():
-#Resets variables
+#Resets variables. Used after every full text analysis
 	del keys[0:len(keys)]
 	pile.clear()
 	aP.clear()
@@ -43,7 +46,7 @@ def getSize():
 	return len(data)
 
 def displayDB():
-#Display Words and Information
+#Prints Words and Information
 	print "\nFORMAT: \nword : ('synset', valence, val sd, arousal, ar sd)\n"
 	for x in data:
 		print x[0],':',x[1:]
@@ -54,19 +57,20 @@ def totalVA():
 	for k in keys:
 		t0.extend(pile[k][0])
 		t1.extend(pile[k][1])
-	total.append(avg(t0))
-	total.append(max(t1))
+	total.append(calc(t0)) #Uses current calc function for Overall Valence
+	total.append(max(t1)) #Uses maximum function for Overall Arousal
 
 def addToPile((word,synset,val,valsd,ar,arsd)):
-#Adds word to records. NEED TO DO: ADD IN SD's!
+#Adds word to records.
+	#Apply mofidiers
 	global neg, very, alittle #Mod(3/7)
 	delta = 0
-	if very: #emphasizes by 1
+	if very: #if intensifier found = TRUE, emphasizes by 1
 		very = False
 		if val > 5: delta += 1
 		else: delta -= 1
 		word = "very "+word	
-	if alittle: #de-emphasizes by 1
+	if alittle: #if unintensifier found = TRUE, de-emphasizes by 1
 		alittle = False
 		if val > 5: delta -= 1
 		else: delta += 1
@@ -113,15 +117,16 @@ def searchWord(target):
 	target = unpunctuate(target)
 	if (target == "not") or (target[-3:] == "dnt" or target[-3:] == "snt"): #Ref: 51, 285
 		neg = True
-	elif (target in vList): #Ref: 60, 198, 187 (really), 350 (extremely)
+	elif (target in vList): #Is it an intensifier?
 		very = True
-	elif (target in aList): #Ref: 106
+	elif (target in aList): #Is it an unintensifier?
 		alittle = True
 	#Mod(6/7)
-	elif (target in conj): #Resets after a "but" (ex. didn't win, but is happy) #Ref: 34 (and), 206 (but)
+	elif (target in conj): #Resets after a "but" (ex. didn't win, but is happy)
 		very, neg, alittle = (False,)*3
 	found = None
-	for x in data:	
+	for x in data:
+		#Looks for word in database
 		if x[0] == target:
 			addToPile(x)
 			found = x
@@ -129,8 +134,8 @@ def searchWord(target):
 		p, neg, very, alittle = (False,)*4 #Mod(7/7)
 	return found
 
-def avg(list):
-#Returns average of a list of numbers
+def calc(list):
+#Returns calculation: average
 	if len(list)>0:
 		avg = (sum(list)/len(list))
 		return math.ceil(avg*100)/100
@@ -152,7 +157,7 @@ def textAnalysis(text):
 		searchWord(s)
 	#Analyzes pile, saves as aP
 	for synset in keys:
-		aP[synset] = [avg(pile[synset][0]), avg(pile[synset][1]), pile[synset][2], pile[synset][3]]
+		aP[synset] = [calc(pile[synset][0]), calc(pile[synset][1]), pile[synset][2], pile[synset][3]]
 	totalVA()
 
 def dataAnalysis(results):
@@ -195,7 +200,6 @@ def opt2(text):
 	print ""
 
 def opt3(docname, results):
-	#fix this
 	try:
 		with open(docname, 'r') as f:
 			reader = csv.reader(f)
